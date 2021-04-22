@@ -1,0 +1,36 @@
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    font-family: $main-font;
+    font-size: 20px;
+    line-height: 1.15;
+    color: $main-white-color;
+  }
+
+  &__field {
+    margin-bottom: 5px;
+  }
+
+  &__label {
+    display: block;
+    font-family: $main-font;
+    font-size: 12px;
+    line-height: 1.15;
+    color: $main-white-color;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+}
