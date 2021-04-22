@@ -1,0 +1,34 @@
+//.action-btn--crimson - малиновая кнопка
+//.action-btn--light - светло розовая
+// тут описаны отдельно две кнопки, для каждой кнопки настроены свои ховеры и анимации.
+//в своей секции вам нужно задавать кнопке нужные размеры
+
+.test-div {
+  display: flex;
+  width: 400px;
+  background-color: teal;
+  justify-content: space-between;
+  margin: 20px 20px 20px 20px;
+}
+
+.action-btn--crimson {
+  width: 161px;
+  height: 24px;
+
+  border-radius: 22px;
+
+  color: $main-white-color;
+  background-color: $text-color-title;
+}
+
+//--light______________
+
+.action-btn--light {
+  width: 161px;
+  height: 24px;
+
+  border-radius: 22px;
+
+  color: $text-color-title;
+  background-color: $main-white-color;
+}
