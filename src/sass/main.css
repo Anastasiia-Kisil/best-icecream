@@ -78,7 +78,6 @@ svg {
 }
 
 .reviews {
-  background-color: #fafafa;
   padding-top: 80px;
   padding-bottom: 86px;
 }
@@ -178,7 +177,7 @@ svg {
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .reviews__text {
     width: 460px;
     font-size: 14px;
@@ -187,7 +186,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .reviews__text {
     width: 750px;
     font-size: 16px;
@@ -224,7 +223,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .reviews__person-name {
     font-size: 20px;
     line-height: 1.85;
@@ -236,7 +235,7 @@ svg {
   width: 32px;
   height: 4px;
   margin-bottom: 18px;
-  background-image: url(../images/reviews/dots.svg);
+  background-image: url(../images/reviews/dots.png);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -249,6 +248,64 @@ svg {
   .reviews__person-name:before {
     margin-bottom: 15px;
   }
+}
+
+.slick-dots {
+  position: unset;
+  bottom: unset;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li:not(:first-child) {
+  margin-left: 18px;
+}
+
+.slick-dots li button {
+  position: relative;
+  width: 12px;
+  height: 12px;
+}
+
+.slick-dots li button:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/reviews/Ellipse-gray.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/reviews/Home-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .action-btn--crimson,
