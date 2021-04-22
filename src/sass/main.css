@@ -74,4 +74,33 @@ svg {
   width: 1px !important;
   overflow: hidden;
 }
+
+.reviews {
+  background-color: #fafafa;
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .reviews {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
+
+.reviewers__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=main.css.map */
