@@ -1,0 +1,276 @@
+.products {
+    padding-top: 121px;
+    padding-bottom: 98px;
+    &__item-wraper {
+        padding-top: 113px ;
+    }
+    
+    &__label {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        color: $background-image;
+        // width: 142px;
+        // height: 21px;
+        font-family: $secondary-font;
+        font-size: 18px;
+        line-height: 1,166;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__title {
+        
+        color: $text-color-title;
+        font-family: $secondary-font;
+        font-size: 34px;
+        line-height: 1.147;
+        text-align: center;
+        letter-spacing: $main-letter-spacing;
+        text-transform: uppercase;
+    }
+    &__list {
+        padding-top: 31px;
+    }
+  
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 161px;
+        padding-bottom: 41px;
+        border-radius: 24px;
+            
+        &:nth-child(1) {
+            margin-top: 113px;
+            background-color: $background-accent;
+            &::after {
+                content: "";                
+                position: absolute;
+                top: -113px;
+                left: 50%;                
+                transform: translateX(-50%);
+                width: 249px;
+                height: 252px;
+                background-image: url(/images/products/tel/x1/product1-tel.png);
+                background-size: 249px 252px;
+                
+            }
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tel/x2/product1-tel@2x.png);
+                }
+            }
+        }
+        &:nth-child(2) {
+            margin-top: 130px;
+            background-color: $background-beige;
+            &::after {
+                content: "";                
+                position: absolute;
+                top: -113px;
+                left: 50%;                
+                transform: translateX(-50%);
+                width: 249px;
+                height: 252px;
+                background-image: url(/images/products/tel/x1/product2-tel.png);
+                background-size: 249px 252px;
+                
+            }
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tel/x2/product2-tel@2x.png);
+                }
+            }
+        }
+        &:nth-child(3) {
+            margin-top: 130px;
+            background-color: $background-green;
+            &::after {
+                content: "";                
+                position: absolute;
+                top: -113px;
+                left: 50%;                
+                transform: translateX(-50%);
+                width: 249px;
+                height: 252px;
+                background-image: url(/images/products/tel/x1/product3-tel.png);
+                background-size: 249px 252px;
+                
+            }
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tel/x2/product3-tel@2x.png);
+                }
+            }
+        }
+    }
+
+    &__item-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        font-family: $secondary-font;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: $main-letter-spacing;
+        text-transform: uppercase;
+        color: $main-white-color;
+    }
+    
+    &__item-title::after {        
+        // margin-bottom: 30px;
+        display: block;
+        content: "...";
+        width: 26px;
+        height: 6px;
+    }
+    &__item-decroption {
+        width: 200px;
+        height: 124px;
+
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.52;
+        text-align: center;
+        letter-spacing: $main-letter-spacing;
+
+        color: $main-white-color;
+    }
+    &__item-link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        margin-top: 30px;
+        background-color: #fff;
+        border-radius: 50%;  
+    }
+    &__item-icon {
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .products__list {
+        display: flex; 
+        justify-content: center;
+        padding-top: 39px;
+    } 
+    .products__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    .products__item:nth-child(1)::after{
+        top: -103px;
+        width: 220px;
+        height: 226px;
+        background-image: url(/images/products/tablet/x1/product1-tablet.png);
+        background-size: 220px 226px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tablet/x2/product1-tablet@2x.png);
+                }
+            }
+    }
+    .products__item:nth-child(2)::after{
+        top: -111px;
+        width: 220px;
+        height: 233px;
+        background-image: url(/images/products/tablet/x1/product2-tablet.png);
+        background-size: 220px 233px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tablet/x2/product2-tablet@2x.png);
+                }
+            }
+    }
+    .products__item:nth-child(3)::after{
+        top: -103px;
+        width: 220px;
+        height: 224px;
+        background-image: url(/images/products/tablet/x1/product3-tablet.png);
+        background-size: 220px 224px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/tablet/x2/product3-tablet@2x.png);
+            }
+        }
+    }
+}
+@media screen and (min-width: $desktop) {
+    .products__list {
+        padding-top: 45px;
+    }
+    .products__item:not(:last-child) {
+        margin-right: 24px;
+    }
+    .products__item:nth-child(1)::after{
+        top: -210px;
+        width: 335px;
+        height: 335px;
+        background-image: url(/images/products/desktop/x1/product1-desktop.png);
+        background-size: 335px 335px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/desktop/x2/product1-desktop@2x.png);
+                }
+            }
+    }
+    .products__item:nth-child(2)::after{
+        top: -210px;
+        width: 335px;
+        height: 335px;
+        background-image: url(/images/products/desktop/x1/product2-desktop.png);
+        background-size: 335px 335px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/desktop/x2/product2-desktop@2x.png);
+                }
+            }
+    }
+    .products__item:nth-child(3)::after{
+        top: -210px;
+        width: 335px;
+        height: 335px;
+        background-image: url(/images/products/desktop/x1/product3-desktop.png);
+        background-size: 335px 335px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                &::after {
+                background-image: url(/images/products/desktop/x2/product3-desktop@2x.png);
+                }
+            }
+    }
+    
+}
