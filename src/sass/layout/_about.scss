@@ -1,10 +1,7 @@
 .about {
   background-color: $background-accent-light;
   padding-top: 125px;
-  padding-bottom: 100px;
-  .container & {
-    text-align: center;
-  }
+  padding-bottom: 20px;
 
   &__title {
     margin-bottom: 26px;
@@ -48,5 +45,15 @@
     font-size: 12px;
     line-height: 162%;
     color: $text-color-accent;
+  }
+  & .action-btn--light {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &__icon {
+    margin-left: 12px;
   }
 }
