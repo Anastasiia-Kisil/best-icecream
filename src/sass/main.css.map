@@ -8,7 +8,8 @@
         "base/_container.scss",
         "utils/_hidden.scss",
         "components/_action-button.scss",
-        "components/_simple-button.scss"
+        "components/_simple-button.scss",
+        "layout/_contacts.scss"
     ],
     "names": [],
     "file": "main.css"
