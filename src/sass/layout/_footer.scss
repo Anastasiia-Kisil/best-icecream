@@ -1,0 +1,101 @@
+//======================MOB==================
+@media screen and (max-width: $max-mobile) {
+  .footer {
+    padding-top: 80px;
+    padding-bottom: 100%;
+    background-color: $background-accent-light;
+  }
+  .footer__text-1 {
+    font-weight: 400;
+    width: 230px;
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: $main-letter-spacing;
+    color: $background-image;
+
+    margin-bottom: 17px;
+  }
+  .footer__text-2 {
+    font-weight: 400;
+    width: 200px;
+    font-family: $secondary-font;
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: $main-letter-spacing;
+    color: $text-color-title;
+
+    margin-bottom: 40px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+  }
+  .social-list__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fea5bb;
+  }
+  .social-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .social-list__icon {
+    width: 18px;
+    height: 18px;
+    fill: $main-white-color;
+  }
+  .footer__kontact {
+    text-align: right;
+
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.83;
+
+    margin-bottom: 40px;
+  }
+  .footer__kontact-link {
+    color: $text-color-title;
+  }
+  .copyright {
+    border-top: 1px solid #e1e1e1;
+  }
+  .copyright__text {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: $main-letter-spacing;
+    text-align: center;
+
+    margin: auto;
+    padding-top: 22px;
+    max-width: 150px;
+
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   min-width: 480px;
+    //   border: 1px solid #e1e1e1;
+    // }
+  }
+}
+
+//======================TAB===================
+@media screen and (min-width: $tablet) {
+}
+//=======================DESK=================
+@media screen and (min-width: $desktop) {
+}
