@@ -1,55 +1,59 @@
 <section class="about">
   <div class="container">
     <h2 class="about__title">how it’s made?</h2>
-    <picture>
-      <source
-        srcset="
-          ./images/about/desktop/x1/cow-desktop.png    1x,
-          ./images/about/desktop/x2/cow-desktop@2x.png 2x
-        "
-        media="(min-width: 1050px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/about/desktop/x1/cow-desktop.png    1x,
-          ./images/about/desktop/x2/cow-desktop@2x.png 2x
-        "
-        media="(min-width: 1050px)"
-      />
-      <source
-        srcset="
-          ./images/about/tablet/x1/cow-tablet.png    1x,
-          ./images/about/tablet/x2/cow-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="./images/about/tel/x1/cow-tel.png 1x, ./images/about/tel/x2/cow-tel@2x.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img
-        class="about__img"
-        src="./images/about/tel/x1/cow-tel.png"
-        alt="Корова с кувшином молока"
-      />
-    </picture>
-    <p class="about__text-top">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
-    <p class="about__text-bottom">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt.
-      <br /><br />
-      Aliquam erat volutpat. Aenean accumsan.
-    </p>
-    <button class="action-btn--light">
-      Read more
-      <svg class="about__icon" width="15" height="20">
-        <use href="./images/sprite.svg#arrow-btn"></use>
-      </svg>
-    </button>
+    <div class="about__container">
+      <picture>
+        <source
+          srcset="
+            ./images/about/desktop/x1/cow-desktop.png    1x,
+            ./images/about/desktop/x2/cow-desktop@2x.png 2x
+          "
+          media="(min-width: 1080px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/about/desktop/x1/cow-desktop.png    1x,
+            ./images/about/desktop/x2/cow-desktop@2x.png 2x
+          "
+          media="(min-width: 1080px)"
+        />
+        <source
+          srcset="
+            ./images/about/tablet/x1/cow-tablet.png    1x,
+            ./images/about/tablet/x2/cow-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/tel/x1/cow-tel.png 1x, ./images/about/tel/x2/cow-tel@2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img
+          class="about__img"
+          src="./images/about/tel/x1/cow-tel.png"
+          alt="Корова с кувшином молока"
+        />
+      </picture>
+      <div class="about__box-text">
+        <p class="about__text-top">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__text-bottom">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+          <br /><br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button class="action-btn--light">
+          Read more
+          <svg class="about__icon action-btn__icon" width="10" height="10">
+            <use xlink:href="./images/sprite.svg#arrow-btn-2"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
