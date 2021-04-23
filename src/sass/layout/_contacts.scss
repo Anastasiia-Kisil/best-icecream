@@ -1,0 +1,135 @@
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: $background-accent-light;
+}
+
+.contacts-card {
+  justify-content: center;
+
+  &__item {
+    background: $main-white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 220px;
+    height: 100%;
+
+    padding: 44px 20px;
+
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__type {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $main-white-color;
+    text-transform: uppercase;
+
+    background-color: $background-beige;
+    border-radius: 6px;
+    height: 28px;
+    width: 73px;
+
+    margin-bottom: 30px;
+
+    &--foodtrack {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.9;
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: $main-white-color;
+      text-transform: uppercase;
+
+      background: $background-green;
+      border-radius: 6px;
+      height: 28px;
+      width: 138px;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  &__location {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+
+    color: $main-black-color;
+
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+
+    color: $text-color-accent;
+
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.schedule-list {
+  margin-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__days {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+
+    color: $main-black-color;
+    margin-top: 10px;
+  }
+
+  &__time {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+
+    color: $background-image;
+  }
+}
+
+.connection-list {
+  &__link {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+
+    color: #907e82;
+  }
+}
+
+.button-list {
+  margin-top: 54px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

@@ -194,4 +194,126 @@ simple-btn--crimson,
     line-height: 1.28;
   }
 }
+
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background: #fff5f6;
+}
+
+.contacts-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-card__item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 220px;
+  height: 100%;
+  padding: 44px 20px;
+  margin: 0 auto;
+}
+
+.contacts-card__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-card__type {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #f0d1a5;
+  border-radius: 6px;
+  height: 28px;
+  width: 73px;
+  margin-bottom: 30px;
+}
+
+.contacts-card__type--foodtrack {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #c2e297;
+  border-radius: 6px;
+  height: 28px;
+  width: 138px;
+  margin-bottom: 30px;
+}
+
+.contacts-card__location {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts-card__description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #907e82;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.schedule-list {
+  margin-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.schedule-list__days {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.schedule-list__time {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #ffa5ba;
+}
+
+.connection-list__link {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.85;
+  color: #907e82;
+}
+
+.button-list {
+  margin-top: 54px;
+}
+
+.button-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=main.css.map */
