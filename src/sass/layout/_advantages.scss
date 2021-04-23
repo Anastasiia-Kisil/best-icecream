@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 45px;
+  padding-top: 20px;
   padding-bottom: 45px;
   background-color: $background-accent-light;
 }
@@ -10,6 +10,15 @@
   line-height: 1.13;
   color: $text-color-title;
   margin-bottom: 15px;
+  opacity: 0;
+}
+.advantages__weight {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 1.13;
+  color: $text-color-title;
+  margin-bottom: 15px;
+  opacity: 0;
 }
 .advantages__text {
   font-family: $main-font;
@@ -36,7 +45,7 @@
 
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
   .advantages {
-    padding-top: 30px;
+    padding-top: 32px;
     padding-bottom: 70px;
   }
   .advantages__list {
@@ -58,6 +67,10 @@
     font-size: 48px;
     line-height: 1.14;
   }
+  .advantages__weight {
+    font-size: 48px;
+    line-height: 1.14;
+  }
   .advantages__text {
     font-size: 14px;
     line-height: 1.74;
@@ -66,7 +79,7 @@
 
 @media screen and (min-width: $desktop) {
   .advantages {
-    padding-top: 45px;
+    padding-top: 20px;
     padding-bottom: 70px;
   }
   .advantages__list {
@@ -85,6 +98,10 @@
     margin-bottom: 40px;
   }
   .advantages__quantity {
+    font-size: 58px;
+    line-height: 1.13;
+  }
+  .advantages__weight {
     font-size: 58px;
     line-height: 1.13;
   }
