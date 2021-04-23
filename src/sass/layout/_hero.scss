@@ -6,10 +6,32 @@
     max-width: 1280px;
     margin: 0 auto;
     height: 100vh;
-
+     background-image: url('../images/hero/tel/x1/icecream-tel.png');
+    background-repeat: no-repeat;
+    background-size: 171px 80vh;
+    background-position: bottom right 20vw;
+    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/hero/tel/x2/icecream-tel@2x.png');
+    }
+ 
     @media screen and (min-width: 768px) {
         padding-top: 102px;
         padding-bottom: 34px;
+        height: 499px;
+
+        background-image: url('../images/hero/tablet/x1/icecream-tablet.png');
+        background-repeat: no-repeat;
+        // background-size: 143px 336px;
+        background-position: bottom left 45vw;
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/hero/tablet/x2/icecream-tablet@2x.png');
+        }
     }
 
     @media screen and (min-width: 1280px) {
