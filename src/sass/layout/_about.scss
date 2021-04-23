@@ -1,5 +1,6 @@
 .about {
   background-color: $background-accent-light;
+  background-position-y: 90%;
   padding-top: 125px;
   padding-bottom: 20px;
 
@@ -32,11 +33,11 @@
     margin-bottom: 46px;
   }
   &__box-text {
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   &__text-top {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.62;
@@ -51,6 +52,7 @@
     letter-spacing: normal;
     color: $text-color-accent;
     &_end {
+      margin-bottom: 22px;
       font-weight: 500;
       font-size: 12px;
       line-height: 1.62;
@@ -59,7 +61,6 @@
     }
   }
   & .action-btn--light {
-    margin-top: 18px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -80,7 +81,7 @@
     background-position-y: 90%;
     background-size: 100%;
     & .container {
-      max-width: 550px;
+      max-width: 600px;
     }
   }
 
@@ -98,10 +99,11 @@
   .about {
     padding-top: 130px;
     padding-bottom: 32px;
+
     &__container {
       display: flex;
-      justify-content: space-between;
     }
+
     &__title {
       margin-bottom: 55px;
       font-size: 48px;
@@ -113,12 +115,11 @@
       }
     }
     &__box-text {
-      margin-left: 0px;
-      margin-right: 0px;
+      padding-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
     }
     &__text-top {
-      padding-top: 50px;
-      margin-top: 0;
       font-size: 14px;
       line-height: 1.76;
     }
@@ -127,43 +128,41 @@
       line-height: 1.76;
       letter-spacing: 0.04em;
       &_end {
-        letter-spacing: 0.04em;
+        margin-bottom: 62px;
         font-size: 14px;
         line-height: 1.76;
+        margin-bottom: 62px;
+        letter-spacing: 0.04em;
       }
     }
-    & .action-btn--light {
-      margin-top: 62px;
-    }
-    &__box_img {
+    &__img {
       margin-right: 18px;
+      margin-bottom: 0px;
       min-width: 340px;
       min-height: 340px;
-    }
-    &__img {
-      margin-right: 20px;
-      // min-width: 340px;
-      // min-height: 340px;
-      margin-bottom: 0px;
     }
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: $desktop) {
   .about {
     background-image: url(../images/about/desktop/x1/background-desktop.png);
     background-repeat: no-repeat;
     background-position-y: 120%;
     background-size: 100%;
+    padding-top: 125px;
+    padding-bottom: 20px;
 
     &__title {
       margin-bottom: 55px;
       font-size: 58px;
       line-height: 1.14;
+      letter-spacing: 0.06em;
 
       &::before {
         font-size: 30px;
         line-height: 1.13;
+        letter-spacing: 0.04em;
       }
     }
 
@@ -174,13 +173,11 @@
     &__text-bottom {
       line-height: 1.94;
       &_end {
+        margin-bottom: 46px;
         line-height: 1.94;
       }
     }
-    & .action-btn--light {
-      margin-top: 45px;
-    }
-    &__box_img {
+    &__img {
       margin-right: 72px;
       min-width: 516px;
       min-height: 516px;
