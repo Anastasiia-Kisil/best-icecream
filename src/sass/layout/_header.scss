@@ -76,6 +76,8 @@
 
     &__link {
         color: $main-white-color;
+        padding-top: 10px;
+        padding-bottom: 10px;
         cursor: pointer;
         transition: color 250ms ease-in-out;
 
@@ -118,6 +120,7 @@
 
     &__order-btn {
         display: flex;
+        font-weight: 700;
         @media screen and (max-width: 768px) {
             display: none;
         }
