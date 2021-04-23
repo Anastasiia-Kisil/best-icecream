@@ -1,11 +1,13 @@
 .contacts {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 42px;
+  padding-bottom: 65px;
   background: $background-accent-light;
 }
 
 .contacts-card {
   justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
 
   &__item {
     background: $main-white-color;
@@ -26,8 +28,13 @@
   &__type {
     font-family: $main-font;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.9;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     letter-spacing: 0.04em;
 
@@ -35,17 +42,21 @@
     text-transform: uppercase;
 
     background-color: $background-beige;
-    border-radius: 6px;
-    height: 28px;
-    width: 73px;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
 
     margin-bottom: 30px;
 
     &--foodtrack {
       font-family: $main-font;
       font-weight: 500;
-      font-size: 16px;
-      line-height: 1.9;
+      font-size: 12px;
+      line-height: 1.8;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
       letter-spacing: 0.04em;
 
@@ -53,9 +64,9 @@
       text-transform: uppercase;
 
       background: $background-green;
-      border-radius: 6px;
-      height: 28px;
-      width: 138px;
+      border-radius: 4px;
+      width: 130px;
+      height: 16px;
 
       margin-bottom: 30px;
     }
@@ -79,7 +90,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.03em;
 
     color: $text-color-accent;
 

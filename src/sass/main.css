@@ -196,8 +196,8 @@ simple-btn--crimson,
 }
 
 .contacts {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 42px;
+  padding-bottom: 65px;
   background: #fff5f6;
 }
 
@@ -205,6 +205,8 @@ simple-btn--crimson,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contacts-card__item {
@@ -225,32 +227,51 @@ simple-btn--crimson,
 .contacts-card__type {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #f0d1a5;
-  border-radius: 6px;
-  height: 28px;
-  width: 73px;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
   margin-bottom: 30px;
 }
 
 .contacts-card__type--foodtrack {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.9;
+  font-size: 12px;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: #ffffff;
   text-transform: uppercase;
   background: #c2e297;
-  border-radius: 6px;
-  height: 28px;
-  width: 138px;
+  border-radius: 4px;
+  width: 130px;
+  height: 16px;
   margin-bottom: 30px;
 }
 
@@ -270,7 +291,7 @@ simple-btn--crimson,
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: #907e82;
   display: block;
   margin-bottom: 25px;
