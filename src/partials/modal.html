@@ -1,34 +1,33 @@
-<div class="backdrop">
-  <div class="modal">
-    <form class="modal-form" autocomplete="on">
-      <b class="modal-form__title">Order</b>
-      <label class="modal-form__field">
-        <span class="modal-form__label">Name</span>
-        <input class="modal-form__input" type="text" name="name" required minlength="3" />
-      </label>
-      <label class="modal-form__field">
-        <span class="modal-form__label">Phone</span>
-        <input class="modal-form__input" type="tel" name="tel" />
-      </label>
-      <label class="modal-form__field">
-        <span class="modal-form__label">Email</span>
-        <input class="modal-form__input" type="email" name="mail" />
-      </label>
-      <p class="title-checkbox">Choose product</p>
+<form class="decor">
+  <div class="form-left-decoration"></div>
+  <div class="form-right-decoration"></div>
+  <div class="circle"></div>
+  <div class="form-inner">
+    <h3>Order</h3>
+    <label class="form-label">
+      Name
+      <input type="text" />
+    </label>
+    <label class="form-label">
+      Phone
+      <input type="tel" />
+    </label>
+    <label class="form-label">
+      Email
+      <input type="email"/>
+    </label>
+    <p class="title-checkbox">Choose product</p>
       <label class="checkbox">
-        <input type="checkbox" name="product" value="icecream" />Icecream
+        <input class="checkbox__inpu" type="checkbox" name="product" value="icecream" />Icecream
       </label>
       <label class="checkbox">
-        <input type="checkbox" name="product" value="icecoffee" />Icecoffee
+        <input checkbox__inpu type="checkbox" name="product" value="icecoffee" />Icecoffee
       </label>
       <label class="checkbox">
-        <input type="checkbox" name="product" value="milkshake" />Milkshake
+        <input checkbox__inpu type="checkbox" name="product" value="milkshake" />Milkshake
       </label>
+      <button class="modal-form__button" type="submit">Send</button>
     </form>
-    <button class="modal-form__button" type="submit">Send</button>
-    <button class="close-button" type="button">
-          <svg class="modal-form__icon">
-            <use href="./images/sprite.svg#icon-close"></use>
-          </svg> 
   </div>
-</div>
+</form>
+

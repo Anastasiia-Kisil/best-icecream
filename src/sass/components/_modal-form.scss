@@ -1,37 +1,121 @@
-.modal-form {
+body {
+  background: #fff5f6;
+}
+
+.decor {
+  position: relative;
+  max-width: 400px;
+  margin: 50px auto 0;
+  background: white;
+  border-radius: 30px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #fff5f6;
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.form-left-decoration:before {
+  top: -20px;
+}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.form-inner {
   display: flex;
   flex-direction: column;
+  padding: 30px;
+}
+.form-inner input {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  background: #e9eff6;
+  line-height: 40px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
 
-  &__title {
-    text-align: center;
-    font-family: $main-font;
-    font-size: 20px;
-    line-height: 1.15;
-    color: $main-white-color;
-  }
+.form-inner h3 {
+  margin-top: 0;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 24px;
+  color: #d41443;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
-  &__field {
-    margin-bottom: 5px;
-  }
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  color: $background-hover;
+}
 
-  &__label {
-    display: block;
-    font-family: $main-font;
-    font-size: 12px;
-    line-height: 1.15;
-    color: $main-white-color;
-    margin-bottom: 5px;
-  }
+.form-label {
+  margin-bottom: 10px;
+  color: $background-modal-line;
+  margin-bottom: 10px;
+}
 
-  &__input {
-    width: 100%;
-    border-radius: 20px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-  }
+.title-checkbox {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: $main-font;
+  color: $text-color-title;
+}
 
-  &__icon {
-    width: 14px;
-    height: 14px;
-    fill: red;
-  }
+.modal-form__button {
+  background-color: #d41443;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
 }
