@@ -1,22 +1,15 @@
 .products {
     padding-top: 121px;
     padding-bottom: 98px;
-    &__item-wraper {
-        padding-top: 113px ;
-    }
-    
+   
     &__label {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 15px;
         color: $background-image;
-        // width: 142px;
-        // height: 21px;
         font-family: $secondary-font;
         font-size: 18px;
         line-height: 1,166;
-        /* identical to box height */
-
         text-align: center;
         text-transform: uppercase;
     }
@@ -25,13 +18,14 @@
         color: $text-color-title;
         font-family: $secondary-font;
         font-size: 34px;
+        font-weight: normal;
         line-height: 1.147;
         text-align: center;
         letter-spacing: $main-letter-spacing;
         text-transform: uppercase;
     }
     &__list {
-        padding-top: 31px;
+        padding-top: 143px;
     }
   
     &__item {
@@ -40,11 +34,11 @@
         flex-direction: column;
         align-items: center;
         padding-top: 161px;
-        padding-bottom: 41px;
+        padding-bottom: 40px;
         border-radius: 24px;
             
         &:nth-child(1) {
-            margin-top: 113px;
+
             background-color: $background-accent;
             &::after {
                 content: "";                
@@ -115,13 +109,16 @@
     }
 
     &__item-title{
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 66px;
         font-family: $secondary-font;
         font-size: 20px;
-        line-height: 30px;
+        line-height: 1.15;
+        font-weight: normal;
+        font-style: normal;
         /* identical to box height */
         text-align: center;
         letter-spacing: $main-letter-spacing;
@@ -130,13 +127,16 @@
     }
     
     &__item-title::after {        
-        // margin-bottom: 30px;
+        position: absolute;
+        top: 41px;
+        left: 50%;
         display: block;
         content: "...";
         width: 26px;
         height: 6px;
+        transform: translateX(-50%);
     }
-    &__item-decroption {
+    &__item-description {
         width: 200px;
         height: 124px;
 
@@ -147,37 +147,82 @@
         line-height: 1.52;
         text-align: center;
         letter-spacing: $main-letter-spacing;
-
         color: $main-white-color;
     }
     &__item-link {
-        width: 40px;
-        height: 40px;
+        
         display: flex;
         align-items: center;
         justify-content: center;  
         margin-top: 30px;
-        background-color: #fff;
-        border-radius: 50%;  
+        width: 40px;
+        height: 40px;
+        border-radius: 50%; 
+        background-color: $main-white-color;
+       
+        
     }
     &__item-icon {
-        background-color: #fff;
+        width: 11px;
+        height: 11px;
+        // background-color: $main-white-color;
+        fill: $text-color-title;
+        border-radius: 50%; 
     }
 }
 
 @media screen and (min-width: $tablet) {
-    .products__list {
-        display: flex; 
-        justify-content: center;
-        padding-top: 39px;
-    } 
-    .products__item:not(:last-child) {
-        margin-right: 20px;
+    .products {
+        padding-top: 121px;
+        padding-bottom: 98px;
+        &__label {
+            font-size: 26px;
+            line-height: 1,15;
+        }
+        &__title {
+            font-size: 48px;
+            line-height: 1,14;
+        }
+        &__list {
+            display: flex; 
+            justify-content: center;
+            padding-top: 156px;
+            margin-left: -20px;
+        }     
+        &__item {
+            padding-top: 152px;
+            flex-basis: calc( 100% / 1 - 20px);
+        }
+        &__item-description {
+            width: 198px;
+            height: 124px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
+        &__text-hide {
+            display: none;
+        }
+        &__item-link {
+            margin-top: 40px;
+        }
+        &__item:not(:last-child) {
+            margin-right: 20px;
+        }
+        &__item:nth-child(1) {
+            margin-top: 0;
+        }
+        &__item:nth-child(2) {
+            margin-top: 0;
+        }
+        &__item:nth-child(3) {
+            margin-top: 0;
+        }
     }
     .products__item:nth-child(1)::after{
         top: -103px;
         width: 220px;
         height: 226px;
+        
         background-image: url(/images/products/tablet/x1/product1-tablet.png);
         background-size: 220px 226px;
 
@@ -221,12 +266,51 @@
     }
 }
 @media screen and (min-width: $desktop) {
-    .products__list {
-        padding-top: 45px;
+    .products {
+        padding-top: 131px;
+        padding-bottom: 119px;
+        &__label {
+            font-size: 30px;
+            line-height: 1,13;
+        }
+    
+        &__title {
+            font-size: 58px;
+            line-height: 1,14;
+        }
+    
+        &__list {
+            padding-top: 256px;
+            margin-left: -25px;
+        }     
+    
+        &__item {
+            padding-top: 162px;
+            padding-bottom: 50px;
+            flex-basis: calc( 100% / 1 - 25px);
+        }
+        &__item:not(:last-child) {
+            margin-right: 25px;
+        }
+        &__item-title {
+            margin-bottom: 70px;
+            font-size: 32px;
+            line-height: 1.13;   
+        }
+        &__item-title::after {        
+            top: 45px;
+        }
+        &__item-description {
+            width: 241px;
+            height: 106px;
+            font-size: 16px;
+            line-height: 1.76;
+        }
+           &__item-link {
+            margin-top: 62px;
+        }
     }
-    .products__item:not(:last-child) {
-        margin-right: 24px;
-    }
+
     .products__item:nth-child(1)::after{
         top: -210px;
         width: 335px;
@@ -270,7 +354,7 @@
                 &::after {
                 background-image: url(/images/products/desktop/x2/product3-desktop@2x.png);
                 }
-            }
+        }
     }
     
 }
