@@ -92,16 +92,15 @@
   width: 24px;
   height: 32px;
   background-image: linear-gradient(-1deg, rgba(240, 150, 168, 0.8), rgba(225, 121, 146, 0.1));
-  border-radius: 80%;
-  transform: rotate(-3deg);
-  border-top-left-radius: -6;
-  animation-timing-function: ease-in;
+  border-radius: 90%;
+  transform: rotate(-10deg);
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-name: drop;
 }
 
 .drop--1 {
-  animation-duration: 22s;
+  animation-duration: 16s;
   animation-delay: 0ms;
   left: -2%;
   top: 6%;
@@ -109,7 +108,7 @@
 
 .drop--2 {
   opacity: 1;
-  animation-duration: 28s;
+  animation-duration: 26s;
   animation-delay: 0ms;
   left: 92%;
   top: 10%;
@@ -118,20 +117,20 @@
 .drop--3 {
   animation-duration: 12s;
   animation-delay: 0ms;
-  left: 6%;
+  left: 8%;
   top: 50%;
 }
 
 .drop--4 {
-  animation-duration: 32s;
-  animation-delay: 0ms;
+  animation-duration: 8s;
+  animation-delay: 10ms;
   left: 80%;
-  top: 55%;
+  top: 58%;
 }
 
 .drop--5 {
   animation-duration: 20s;
   animation-delay: 0ms;
   left: 58%;
-  top: 58%;
+  top: 54%;
 }
