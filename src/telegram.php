@@ -1,7 +1,6 @@
 <?php
  
-/* https://api.telegram.org/bot1674981223:AAH4VewIegJ-S9hYc_k7Yy2Y2ZsPM63Tjys
-/getUpdates,
+/* https://api.telegram.org/bot1718431015:AAG7UHnTO6elVUHugG3sDkI45J4n8-R6NSI/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
  
 //Переменная $name,$phone, $mail получает данные при помощи метода POST из формы
@@ -10,10 +9,10 @@ $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
  
 //в переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "1674981223:AAH4VewIegJ-S9hYc_k7Yy2Y2ZsPM63Tjys";
+$token = "1718431015:AAG7UHnTO6elVUHugG3sDkI45J4n8-R6NSI";
  
 //нужна вставить chat_id (Как получить chad id, читайте ниже)
-$chat_id = "-146089779";
+$chat_id = "-507769738";
  
 //Далее создаем переменную, в которую помещаем PHP массив
 $arr = array(
