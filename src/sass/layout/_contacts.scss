@@ -3,14 +3,11 @@
 .contacts {
   padding-top: 42px;
   padding-bottom: 65px;
-  // background: $background-accent-light;
-  background: linear-gradient(180deg, rgb(255, 255, 255) 10%, rgb(255, 245, 246) 25%);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(255, 245, 246) 0);
 }
 
 .contacts-card {
   justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
 
   &__item {
     background: $main-white-color;
@@ -164,13 +161,12 @@
   .contacts {
     padding-top: 60px;
     padding-bottom: 79px;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 17%, rgb(255, 245, 246) 0);
   }
 
   .contacts-card {
     display: flex;
 
-    padding-right: 36px;
-    padding-left: 36px;
     margin-left: -20px;
     margin-top: -20px;
 
@@ -234,8 +230,6 @@
       font-size: 14px;
       line-height: 1.85;
       letter-spacing: 0.01em;
-
-      color: $background-image;
     }
   }
 
@@ -261,12 +255,19 @@
   .contacts {
     padding-top: 54px;
     padding-bottom: 85px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $background-accent-light;
+    background-image: url('../images/contacts/desktop/x1/contacts-desktop.png');
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts/desktop/x2/contacts-desktop@2x.png');
+    }
   }
 
   .contacts-card {
-    padding-right: 115px;
-    padding-left: 115px;
-
     margin-left: -30px;
     margin-top: -30px;
 
@@ -275,6 +276,43 @@
 
       margin-left: 30px;
       margin-top: 30px;
+
+      padding: 51px 43px 62px;
+    }
+
+    &__location {
+      font-size: 16px;
+
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 16px;
+
+      margin-bottom: 32px;
+    }
+  }
+
+  .schedule-list {
+    margin-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__days {
+      font-size: 16px;
+
+      margin-top: 15px;
+    }
+
+    &__time {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .connection-list {
+    &__link {
+      font-size: 16px;
     }
   }
 }

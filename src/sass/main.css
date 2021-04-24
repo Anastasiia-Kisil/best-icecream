@@ -864,16 +864,14 @@ svg {
 .contacts {
   padding-top: 42px;
   padding-bottom: 65px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(25%, #fff5f6));
-  background: linear-gradient(180deg, white 10%, #fff5f6 25%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, white), color-stop(0, #fff5f6));
+  background: linear-gradient(180deg, white 8%, #fff5f6 0);
 }
 
 .contacts-card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .contacts-card__item {
@@ -1029,13 +1027,13 @@ svg {
   .contacts {
     padding-top: 60px;
     padding-bottom: 79px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, white), color-stop(0, #fff5f6));
+    background: linear-gradient(180deg, white 17%, #fff5f6 0);
   }
   .contacts-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-right: 36px;
-    padding-left: 36px;
     margin-left: -20px;
     margin-top: -20px;
   }
@@ -1084,7 +1082,6 @@ svg {
     font-size: 14px;
     line-height: 1.85;
     letter-spacing: 0.01em;
-    color: #ffa5ba;
   }
   .connection-list__link {
     font-size: 14px;
@@ -1108,10 +1105,22 @@ svg {
   .contacts {
     padding-top: 54px;
     padding-bottom: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff5f6;
+    background-image: url("../images/contacts/desktop/x1/contacts-desktop.png");
+    background-size: contain;
   }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url("../images/contacts/desktop/x2/contacts-desktop@2x.png");
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .contacts-card {
-    padding-right: 115px;
-    padding-left: 115px;
     margin-left: -30px;
     margin-top: -30px;
   }
@@ -1120,6 +1129,31 @@ svg {
         flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    padding: 51px 43px 62px;
+  }
+  .contacts-card__location {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contacts-card__description {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .schedule-list {
+    margin-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .schedule-list__days {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .schedule-list__time {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .connection-list__link {
+    font-size: 16px;
   }
 }
 
