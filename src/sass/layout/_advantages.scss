@@ -63,6 +63,9 @@
   .advantages__item:not(:last-child) {
     margin-bottom: 38px;
   }
+  .advantages__item {
+    max-width: 230px;
+  }
 }
 
 @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
@@ -73,14 +76,16 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -30px;
-    margin-left: -30px;
+
+    margin-left: -60px;
+  }
+  .container {
+    padding-right: 60px;
   }
 
   .advantages__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 60px);
+    margin-left: 60px;
   }
   .advantages__quantity {
     font-size: 48px;
