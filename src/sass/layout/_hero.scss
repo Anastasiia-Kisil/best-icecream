@@ -7,7 +7,7 @@
     margin: 0 auto;
     height: 100vh;
 
-@media screen and (max-width:767px) {
+    @media screen and (max-width:767px) {
     
     background-image: url('../images/hero/tel/x1/icecream-tel.png'), url('../images/hero/tablet/x1/ellipse-tablet.png');
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 
  
-    @media screen and (min-width: 768px) and (max-width: 1280px) {
+    @media screen and (min-width: 768px) and (max-width: 1079px) {
         padding-top: 102px;
         padding-bottom: 34px;
         height: 399px;
@@ -41,7 +41,7 @@
         }
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1080px) {
         padding-top: 171px;
         padding-bottom: 56px;
         height: 665px;
@@ -59,7 +59,9 @@
             background-image: url('../images/hero/desktop/x2/icecream-desktop@2x.png'), url('../images/hero/desktop/x2/ellipse-desktop@2x.png');
         }
     }
+}
 
+.hero {
     &__title {
         font-family: Titan One;
         font-size: 26px;
@@ -101,6 +103,7 @@
             }
         }
     }
+
     &__desc {
         @media screen and (max-width:767px) {
             display: none;   
@@ -116,7 +119,6 @@
             margin-bottom: 59px;
         }
 
-        
         @media screen and (min-width:1280px) {
             font-size: 14px;
             line-height: 1.7;
@@ -132,6 +134,7 @@
         }
     }
 }
+
 
 .simple-button {
     &__list {
@@ -171,3 +174,64 @@
     //     line-height: 1.2;
     // }
 }
+
+.hero .container {
+    position: relative;
+}
+.hero_bg-16 {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 43px;
+        height: 44px;
+    }
+
+    @media screen and (min-width:1080px) {
+        position: absolute;
+        margin: 0;
+        top: 20px;
+        left: 20px;
+        width: 72px;
+        height: 77px;
+    }
+}
+.hero_bg-23 {
+    position: absolute;
+    width: 51px;
+    height: 43px;
+}
+
+.hhero__bg-milk {
+    position: absolute;
+
+}
+
+.hero__bg-tasty {
+    position: absolute;
+}
+
+// .hero .container {
+//     margin: 0 auto;
+//     position: relative;
+    
+//     @media screen and (max-width: 767px ) {
+//         width: 480px;
+//         .hero_bg-16, 
+//         .hero_bg-23, 
+//         .hero__bg-milk, 
+//         .hero__bg-tasty {
+//             display: none;
+//         }
+//     }
+//     @media screen and (min-width: 768px ) {
+//         width: 768px;
+//     }
+//     @media screen and (min-width: 1280px ) {
+//         width: 1080px;
+//     }
+// }
