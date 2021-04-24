@@ -1,0 +1,195 @@
+.about {
+  background-color: $background-accent-light;
+  background-position-y: 90%;
+  padding-top: 125px;
+  padding-bottom: 20px;
+
+  &__title {
+    margin-bottom: 26px;
+    font-family: $secondary-font;
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d41443;
+
+    &::before {
+      display: block;
+      margin-bottom: 15px;
+      content: 'tradition and love';
+      font-family: $secondary-font;
+      font-size: 18px;
+      line-height: 1.16;
+      text-align: center;
+      text-transform: uppercase;
+      color: $background-image;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+  }
+  &__box-text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  &__text-top {
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: normal;
+    color: $main-black-color;
+  }
+  &__text-bottom {
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+    letter-spacing: normal;
+    color: $text-color-accent;
+    &_end {
+      margin-bottom: 22px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.62;
+      letter-spacing: normal;
+      color: $text-color-accent;
+    }
+  }
+  & .action-btn--light {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+  }
+
+  &__icon {
+    margin-left: 12px;
+  }
+  &__btn {
+    width: 176px;
+  }
+}
+
+@media screen and (max-width: $max-mobile) {
+  .about {
+    background-image: url(../images/about/tel/x1/background-tel.png);
+    background-repeat: no-repeat;
+    background-position-y: 90%;
+    background-size: 100%;
+    & .container {
+      max-width: 600px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .about {
+      background-image: url(../images/about/tel/x2/background-tel@2x.png);
+    }
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 32px;
+
+    &__container {
+      display: flex;
+    }
+
+    &__title {
+      margin-bottom: 55px;
+      font-size: 48px;
+      line-height: 1.15;
+
+      &::before {
+        font-size: 26px;
+        line-height: 1.14;
+      }
+    }
+    &__box-text {
+      padding-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    &__text-top {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    &__text-bottom {
+      font-size: 14px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+      &_end {
+        margin-bottom: 62px;
+        font-size: 14px;
+        line-height: 1.76;
+        margin-bottom: 62px;
+        letter-spacing: 0.04em;
+      }
+    }
+    &__img {
+      margin-right: 18px;
+      margin-bottom: 0px;
+      min-width: 340px;
+      min-height: 340px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .about {
+    background-image: url(../images/about/desktop/x1/background-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 120%;
+    background-size: 100%;
+    padding-top: 125px;
+    padding-bottom: 20px;
+
+    &__title {
+      margin-bottom: 55px;
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
+
+      &::before {
+        font-size: 30px;
+        line-height: 1.13;
+        letter-spacing: 0.04em;
+      }
+    }
+
+    &__text-top {
+      letter-spacing: 0.04em;
+      font-size: 16px;
+    }
+    &__text-bottom {
+      line-height: 1.94;
+      &_end {
+        margin-bottom: 46px;
+        line-height: 1.94;
+      }
+    }
+    &__img {
+      margin-right: 72px;
+      min-width: 516px;
+      min-height: 516px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .about {
+        background-image: url(../images/about/desktop/x2/background-desktop@2x.png);
+      }
+    }
+  }
+}
