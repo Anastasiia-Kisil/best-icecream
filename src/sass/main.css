@@ -58,7 +58,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .container {
     width: 1080px;
     padding-left: 15px;
@@ -90,7 +90,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews {
     padding-top: 122px;
     padding-bottom: 132px;
@@ -124,7 +124,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews__description-wrapper:before {
     top: 32px;
     left: 50px;
@@ -156,7 +156,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews__description-wrapper {
     width: 926px;
     margin-top: 15px;
@@ -187,7 +187,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews__text {
     width: 750px;
     font-size: 16px;
@@ -224,7 +224,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews__person-name {
     font-size: 20px;
     line-height: 1.85;
@@ -245,7 +245,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .reviews__person-name:before {
     margin-bottom: 15px;
   }
@@ -420,7 +420,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .advantages {
     padding-bottom: 70px;
   }
@@ -537,7 +537,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .simple-btn--crimson {
     width: 102px;
     height: 40px;
@@ -565,7 +565,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .simple-btn--light {
     width: 138px;
     height: 40px;
@@ -1034,7 +1034,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .products {
     padding-top: 131px;
     padding-bottom: 119px;
@@ -1086,13 +1086,13 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) and (min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (min-resolution: 192dpi), screen and (min-width: 1080px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .products__item:nth-child(1)::after::after {
     background-image: url(/images/products/desktop/x2/product1-desktop@2x.png);
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .products__item:nth-child(2)::after {
     top: -210px;
     width: 335px;
@@ -1102,13 +1102,13 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) and (min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (min-resolution: 192dpi), screen and (min-width: 1080px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .products__item:nth-child(2)::after::after {
     background-image: url(/images/products/desktop/x2/product2-desktop@2x.png);
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .products__item:nth-child(3)::after {
     top: -210px;
     width: 335px;
@@ -1118,7 +1118,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) and (min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (min-resolution: 192dpi), screen and (min-width: 1080px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .products__item:nth-child(3)::after::after {
     background-image: url(/images/products/desktop/x2/product3-desktop@2x.png);
   }
@@ -1272,7 +1272,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .about {
     background-image: url(../images/about/desktop/x1/background-desktop.png);
     background-repeat: no-repeat;
@@ -1310,7 +1310,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) and (min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1080px) and (min-resolution: 192dpi), screen and (min-width: 1080px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .about .about {
     background-image: url(../images/about/desktop/x2/background-desktop@2x.png);
   }
@@ -1887,7 +1887,7 @@ svg {
   }
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1280px) {
   .footer {
     padding-top: 80px;
     padding-bottom: 9px;
