@@ -1,33 +1,39 @@
-<form class="decor">
-  <div class="form-left-decoration"></div>
-  <div class="form-right-decoration"></div>
-  <div class="circle"></div>
-  <div class="form-inner">
-    <h3>Order</h3>
-    <label class="form-label">
-      Name
-      <input type="text" />
-    </label>
-    <label class="form-label">
-      Phone
-      <input type="tel" />
-    </label>
-    <label class="form-label">
-      Email
-      <input type="email"/>
-    </label>
-    <p class="title-checkbox">Choose product</p>
-      <label class="checkbox">
-        <input class="checkbox__inpu" type="checkbox" name="product" value="icecream" />Icecream
-      </label>
-      <label class="checkbox">
-        <input checkbox__inpu type="checkbox" name="product" value="icecoffee" />Icecoffee
-      </label>
-      <label class="checkbox">
-        <input checkbox__inpu type="checkbox" name="product" value="milkshake" />Milkshake
-      </label>
-      <button class="modal-form__button" type="submit">Send</button>
+<div class="backdrop">
+  <div class="modal">
+    <form class="form">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="form-inner">
+        <h3>Order</h3>
+        <label class="form-label">
+          Name
+          <input type="text" />
+        </label>
+        <label class="form-label">
+          Phone
+          <input type="tel" />
+        </label>
+        <label class="form-label">
+          Email
+          <input type="email" />
+        </label>
+        <p class="title-checkbox">Choose product</p>
+        <label class="checkbox">
+          <input class="checkbox__inpu" type="checkbox" name="product" value="icecream" />Icecream
+        </label>
+        <label class="checkbox">
+          <input checkbox__inpu type="checkbox" name="product" value="icecoffee" />Icecoffee
+        </label>
+        <label class="checkbox">
+          <input checkbox__inpu type="checkbox" name="product" value="milkshake" />Milkshake
+        </label>
+        <button class="modal-form__button" type="submit">Send</button>
+      </div>
     </form>
+    <button type="button" class="close-btn">
+      <svg class="close-btn__icon">
+        <use href="./images/sprite.svg/#icon-close"></use>
+      </svg>
+    </button>
   </div>
-</form>
-
+</div>

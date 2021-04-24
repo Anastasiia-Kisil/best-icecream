@@ -1,11 +1,10 @@
-body {
-  background: #fff5f6;
-}
-
-.decor {
+.modal {
   position: relative;
-  max-width: 400px;
-  margin: 50px auto 0;
+  max-width: 260px;
+  max-height: 502px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: white;
   border-radius: 30px;
 }
@@ -32,7 +31,7 @@ body {
 .form-right-decoration:after {
   content: '';
   position: absolute;
-  width: 50px;
+  width: 35px;
   height: 20px;
   border-radius: 30px;
   background: white;
@@ -46,21 +45,13 @@ body {
 }
 .form-right-decoration:before {
   top: -20px;
-  right: 0;
+  right: 6px;
 }
 .form-right-decoration:after {
   top: 20px;
   right: 10px;
 }
-.circle {
-  position: absolute;
-  bottom: 80px;
-  left: -55px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: white;
-}
+
 .form-inner {
   display: flex;
   flex-direction: column;
@@ -71,7 +62,7 @@ body {
   width: 100%;
   padding: 0 20px;
   background: #e9eff6;
-  line-height: 40px;
+  line-height: 30px;
   border-width: 0;
   border-radius: 20px;
   font-family: 'Roboto', sans-serif;
@@ -98,7 +89,7 @@ body {
 }
 
 .form-label {
-  margin-bottom: 10px;
+  font-size: 12px;
   color: $background-modal-line;
   margin-bottom: 10px;
 }
@@ -118,4 +109,17 @@ body {
   border-radius: 20px;
   border: none;
   margin: 0 auto;
+}
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  color: #d41443;
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
 }
