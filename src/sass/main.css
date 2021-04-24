@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'DM Sans', sans-serif;
   letter-spacing: 0.04em;
@@ -1504,11 +1505,11 @@ svg {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: #ffb8ca;
   min-width: 320px;
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -1671,7 +1672,11 @@ svg {
   background-color: #fff5f6;
 }
 
-.footer__tittle {
+.footer__noth-copy {
+  padding-bottom: 44px;
+}
+
+.footer__title {
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Titan One", cursive;
@@ -1683,7 +1688,7 @@ svg {
   margin-bottom: 17px;
 }
 
-.footer__tittle--dark {
+.footer__title--dark {
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Titan One", cursive;
@@ -1749,7 +1754,7 @@ svg {
   fill: #ffffff;
 }
 
-.footer__kontact {
+.footer__сontact {
   text-align: right;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -1757,20 +1762,15 @@ svg {
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #000000;
-  margin-bottom: 40px;
 }
 
-.footer__kontact-link {
+.footer__сontact-link {
   color: #d41443;
 }
 
 .copyright {
   padding-top: 22px;
-}
-
-.copyright___line {
-  width: 100vw;
-  border: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .copyright__text {
@@ -1781,8 +1781,7 @@ svg {
   letter-spacing: 0.04em;
   color: #907e82;
   text-align: center;
-  margin: auto;
-  margin-top: 22px;
+  margin: 0 auto;
   width: 150px;
 }
 
@@ -1799,7 +1798,7 @@ svg {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .footer__tittle {
+  .footer__title {
     font-weight: 400;
     width: 340px;
     font-family: "Titan One", cursive;
@@ -1809,7 +1808,7 @@ svg {
     color: #ffa5ba;
     margin-bottom: 16px;
   }
-  .footer__tittle--dark {
+  .footer__title--dark {
     font-weight: 400;
     width: 340px;
     font-family: "Titan One", cursive;
@@ -1861,7 +1860,7 @@ svg {
     height: 18px;
     fill: #ffffff;
   }
-  .footer__kontact {
+  .footer__сontact {
     text-align: right;
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
@@ -1870,11 +1869,11 @@ svg {
     letter-spacing: 0.04em;
     color: #000000;
   }
-  .footer__kontact-link {
+  .footer__сontact-link {
     color: #d41443;
   }
   .copyright {
-    padding-top: 90px;
+    padding-top: 29px;
   }
   .copyright__text {
     font-family: "DM Sans", sans-serif;
@@ -1884,8 +1883,6 @@ svg {
     letter-spacing: 0.04em;
     color: #907e82;
     text-align: center;
-    margin: auto;
-    margin-top: 29px;
     width: auto;
   }
 }
@@ -1893,15 +1890,16 @@ svg {
 @media screen and (min-width: 1080px) {
   .footer {
     padding-top: 80px;
+    padding-bottom: 9px;
     background-color: #fff5f6;
   }
-  .footer__tittle {
+  .footer__title {
     width: auto;
     font-size: 30px;
     line-height: 1.13;
     margin-bottom: 16px;
   }
-  .footer__tittle--dark {
+  .footer__title--dark {
     width: auto;
     font-size: 58px;
     letter-spacing: 0.06em;
@@ -1913,19 +1911,17 @@ svg {
     width: 20px;
     height: 20px;
   }
-  .footer__kontact {
+  .footer__contact {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.02em;
   }
   .copyright {
-    padding-top: 100px;
+    padding-top: 9px;
   }
   .copyright__text {
     letter-spacing: 0.02em;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
