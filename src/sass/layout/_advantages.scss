@@ -11,30 +11,33 @@
   color: $text-color-title;
   opacity: 0;
 }
-.advantages__item::before {
-  display: block;
-  content: '';
-  width: 50px;
-  height: 50px;
-  background-image: url(../images/advantages/x1/icon2-advantages.png);
-  background-repeat: no-repeat;
-  margin-bottom: 13px;
-}
-.advantages__item:first-child::before {
-  display: block;
-  content: '';
-  width: 33px;
-  height: 50px;
-  background-image: url(../images/advantages/x1/icon1-advantages.png);
-  background-repeat: no-repeat;
-}
-.advantages__item:last-child::before {
-  display: block;
-  content: '';
-  width: 44px;
-  height: 50px;
-  background-image: url(../images/advantages/x1/icon3-advantages.png);
-  background-repeat: no-repeat;
+
+.advantages__item {
+  &::before {
+    display: block;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/advantages/x1/icon2-advantages.png);
+    background-repeat: no-repeat;
+    margin-bottom: 13px;
+  }
+  &:first-child::before {
+    display: block;
+    content: '';
+    width: 33px;
+    height: 50px;
+    background-image: url(../images/advantages/x1/icon1-advantages.png);
+    background-repeat: no-repeat;
+  }
+  &:last-child::before {
+    display: block;
+    content: '';
+    width: 44px;
+    height: 50px;
+    background-image: url(../images/advantages/x1/icon3-advantages.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__weight {
@@ -60,11 +63,11 @@
     padding-bottom: 50px;
   }
 
-  .advantages__item:not(:last-child) {
-    margin-bottom: 38px;
-  }
   .advantages__item {
     max-width: 230px;
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
   }
 }
 
@@ -86,6 +89,9 @@
   .advantages__item {
     flex-basis: calc(100% / 3 - 60px);
     margin-left: 60px;
+    &::before {
+      margin-bottom: 34px;
+    }
   }
   .advantages__quantity {
     font-size: 48px;
@@ -98,9 +104,6 @@
   .advantages__text {
     font-size: 14px;
     line-height: 1.74;
-  }
-  .advantages__item::before {
-    margin-bottom: 34px;
   }
 }
 
@@ -119,6 +122,9 @@
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    &::before {
+      margin-bottom: 40px;
+    }
   }
 
   .advantages__quantity {
@@ -133,9 +139,5 @@
   .advantages__text {
     font-size: 16px;
     line-height: 1.76;
-  }
-
-  .advantages__item::before {
-    margin-bottom: 40px;
   }
 }
