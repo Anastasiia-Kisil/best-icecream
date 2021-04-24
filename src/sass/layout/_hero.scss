@@ -178,60 +178,80 @@
 .hero .container {
     position: relative;
 }
-.hero_bg-16 {
+.hero__bg-16 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     @media screen and (max-width:767px) {
         display: none;
     }
 
     @media screen and (min-width:768px) {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 43px;
         height: 44px;
     }
 
-    @media screen and (min-width:1080px) {
-        position: absolute;
-        margin: 0;
-        top: 20px;
-        left: 20px;
+    @media screen and (min-width:1080px) {  
         width: 72px;
         height: 77px;
     }
 }
-.hero_bg-23 {
+.hero__bg-23 {
     position: absolute;
-    width: 51px;
-    height: 43px;
+    top: 20%;
+    right: 0;
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 51px;
+        height: 43px;
+    }
+
+    @media screen and (min-width:1080px) {  
+        width: 92px;
+        height: 76px;
+    }
 }
 
-.hhero__bg-milk {
+.hero__bg-milk {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 124px;
+        height: 126px;
+    }
+
+    @media screen and (min-width:1080px) {  
+        width: 188px;
+        height: 191px;
+    }
 
 }
 
 .hero__bg-tasty {
     position: absolute;
-}
+    bottom: 0;
+    right: 0;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 
-// .hero .container {
-//     margin: 0 auto;
-//     position: relative;
-    
-//     @media screen and (max-width: 767px ) {
-//         width: 480px;
-//         .hero_bg-16, 
-//         .hero_bg-23, 
-//         .hero__bg-milk, 
-//         .hero__bg-tasty {
-//             display: none;
-//         }
-//     }
-//     @media screen and (min-width: 768px ) {
-//         width: 768px;
-//     }
-//     @media screen and (min-width: 1280px ) {
-//         width: 1080px;
-//     }
-// }
+    @media screen and (min-width:768px) {
+        width: 168px;
+        height: 133px;
+    }
+
+    @media screen and (min-width:1080px) {  
+        width:  293px;
+        height: 232px;
+    }
+}
