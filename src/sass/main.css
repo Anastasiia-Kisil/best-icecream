@@ -254,7 +254,7 @@ simple-btn--crimson,
   border-radius: 4px;
   width: 80px;
   height: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .contacts-card__type--foodtrack {
@@ -279,13 +279,13 @@ simple-btn--crimson,
   border-radius: 4px;
   width: 130px;
   height: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .contacts-card__location {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.85;
   letter-spacing: 0.04em;
   color: #000000;
@@ -315,8 +315,8 @@ simple-btn--crimson,
 .schedule-list__days {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: 12px;
+  line-height: 1.83;
   color: #000000;
   margin-top: 10px;
 }
@@ -324,16 +324,16 @@ simple-btn--crimson,
 .schedule-list__time {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: 12px;
+  line-height: 1.83;
   color: #ffa5ba;
 }
 
 .connection-list__link {
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.85;
+  font-size: 12px;
+  line-height: 1.5;
   color: #907e82;
 }
 
@@ -346,17 +346,70 @@ simple-btn--crimson,
 }
 
 @media screen and (min-width: 768px) {
-  .contacts {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
   .contacts-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
   }
-  .contacts-card__item:not(:last-child) {
+  .contacts-card__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
     margin-right: 20px;
+  }
+  .contacts-card__type {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__type--foodtrack {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 138px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__location {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .contacts-card__description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .schedule-list {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .schedule-list__days {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-top: 16px;
+  }
+  .schedule-list__time {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    color: #ffa5ba;
+  }
+  .connection-list__link {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button-list__item:not(:last-child) {
+    margin-right: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -53,7 +53,7 @@
     width: 80px;
     height: 16px;
 
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 
     &--foodtrack {
       font-family: $main-font;
@@ -75,14 +75,14 @@
       width: 130px;
       height: 16px;
 
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
   }
 
   &__location {
     font-family: $main-font;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.85;
     letter-spacing: 0.04em;
 
@@ -116,8 +116,8 @@
   &__days {
     font-family: $main-font;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
+    font-size: 12px;
+    line-height: 1.83;
 
     color: $main-black-color;
     margin-top: 10px;
@@ -126,8 +126,8 @@
   &__time {
     font-family: $main-font;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
+    font-size: 12px;
+    line-height: 1.83;
 
     color: $background-image;
   }
@@ -137,8 +137,8 @@
   &__link {
     font-family: $main-font;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
+    font-size: 12px;
+    line-height: 1.5;
 
     color: #907e82;
   }
@@ -153,16 +153,87 @@
 }
 
 @media screen and (min-width: 768px) {
-  .contacts {
-    padding-top: 60px;
-    padding-bottom: 80px;
-  }
-
   .contacts-card {
     display: flex;
 
-    &__item:not(:last-child) {
+    margin-left: -20px;
+    margin-top: -20px;
+
+    &__item {
+      flex-basis: calc(100% / 3 - 20px);
+
+      margin-left: 20px;
       margin-right: 20px;
+    }
+
+    &__type {
+      font-size: 16px;
+      line-height: 1.88;
+
+      border-radius: 6px;
+      width: 73px;
+      height: 28px;
+
+      margin-bottom: 30px;
+
+      &--foodtrack {
+        font-size: 16px;
+        line-height: 1.88;
+
+        border-radius: 6px;
+        width: 138px;
+        height: 28px;
+
+        margin-bottom: 30px;
+      }
+    }
+
+    &__location {
+      font-size: 14px;
+
+      margin-bottom: 14px;
+    }
+
+    &__description {
+      font-size: 14px;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  .schedule-list {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__days {
+      font-size: 14px;
+      line-height: 1.85;
+
+      margin-top: 16px;
+    }
+
+    &__time {
+      font-size: 14px;
+      line-height: 1.85;
+      letter-spacing: 0.01em;
+
+      color: $background-image;
+    }
+  }
+
+  .connection-list {
+    &__link {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+  }
+
+  .button-list {
+    display: flex;
+
+    &__item:not(:last-child) {
+      margin-right: 15px;
     }
   }
 }
