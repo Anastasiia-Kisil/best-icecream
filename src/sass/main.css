@@ -574,7 +574,6 @@ svg {
   }
 }
 
-HEAD
 .contacts {
   padding-top: 42px;
   padding-bottom: 65px;
@@ -617,6 +616,202 @@ HEAD
   font-size: 12px;
   line-height: 1.8;
   letter-spacing: 0.04em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  width: 80px;
+  height: 16px;
+  margin-bottom: 25px;
+}
+
+.contacts-card__type--foodtrack {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #c2e297;
+  border-radius: 4px;
+  width: 130px;
+  height: 16px;
+  margin-bottom: 25px;
+}
+
+.contacts-card__location {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts-card__description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #907e82;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.schedule-list {
+  margin-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.schedule-list__days {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.schedule-list__time {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
+}
+
+.connection-list__link {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.button-list {
+  margin-top: 54px;
+}
+
+.button-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.button-list-margin {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 36px;
+    padding-left: 36px;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .contacts-card__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 50px 31px;
+  }
+  .contacts-card__type {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__type--foodtrack {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 138px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__location {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .contacts-card__description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .schedule-list {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .schedule-list__days {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-top: 16px;
+  }
+  .schedule-list__time {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+    color: #ffa5ba;
+  }
+  .connection-list__link {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .button-list__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-card {
+    padding-right: 115px;
+    padding-left: 115px;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .contacts-card__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 .hero {
@@ -774,23 +969,6 @@ HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: #f0d1a5;
-  border-radius: 4px;
-  width: 80px;
-  height: 16px;
-  margin-bottom: 25px;
-}
-
-.contacts-card__type--foodtrack {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.8;
-
 }
 
 .simple-button__item:not(:last-child) {
@@ -983,147 +1161,6 @@ HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  text-transform: uppercase;
-  background: #c2e297;
-  border-radius: 4px;
-  width: 130px;
-  height: 16px;
-  margin-bottom: 25px;
-}
-
-.contacts-card__location {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.85;
-  letter-spacing: 0.04em;
-  color: #000000;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.contacts-card__description {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #907e82;
-  display: block;
-  margin-bottom: 25px;
-}
-
-.schedule-list {
-  margin-bottom: 25px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.schedule-list__days {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  color: #000000;
-  margin-top: 10px;
-}
-
-.schedule-list__time {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.83;
-  color: #ffa5ba;
-}
-
-.connection-list__link {
-  font-family: "DM Sans", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #907e82;
-}
-
-.button-list {
-  margin-top: 54px;
-}
-
-.button-list__item:not(:last-child) {
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .contacts-card {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-left: -20px;
-    margin-top: -20px;
-  }
-  .contacts-card__item {
-    -ms-flex-preferred-size: calc(100% / 3 - 20px);
-        flex-basis: calc(100% / 3 - 20px);
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .contacts-card__type {
-    font-size: 16px;
-    line-height: 1.88;
-    border-radius: 6px;
-    width: 73px;
-    height: 28px;
-    margin-bottom: 30px;
-  }
-  .contacts-card__type--foodtrack {
-    font-size: 16px;
-    line-height: 1.88;
-    border-radius: 6px;
-    width: 138px;
-    height: 28px;
-    margin-bottom: 30px;
-  }
-  .contacts-card__location {
-    font-size: 14px;
-    margin-bottom: 14px;
-  }
-  .contacts-card__description {
-    font-size: 14px;
-    margin-bottom: 30px;
-  }
-  .schedule-list {
-    margin-bottom: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .schedule-list__days {
-    font-size: 14px;
-    line-height: 1.85;
-    margin-top: 16px;
-  }
-  .schedule-list__time {
-    font-size: 14px;
-    line-height: 1.85;
-    letter-spacing: 0.01em;
-    color: #ffa5ba;
-  }
-  .connection-list__link {
-    font-size: 14px;
-    line-height: 1.85;
-  }
-  .button-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .button-list__item:not(:last-child) {
-    margin-right: 15px;
-
   margin-top: 30px;
   width: 40px;
   height: 40px;
@@ -1838,13 +1875,13 @@ HEAD
   border: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button__burger-btn {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .button__burger-btn {
     display: none;
   }
@@ -1863,7 +1900,7 @@ HEAD
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button__order-btn {
     display: none;
   }
@@ -2125,7 +2162,6 @@ HEAD
   }
   .copyright__text {
     letter-spacing: 0.02em;
-
   }
 }
 /*# sourceMappingURL=main.css.map */
