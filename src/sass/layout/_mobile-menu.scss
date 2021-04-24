@@ -35,6 +35,7 @@
 .mobile-menu__list {
   margin-top: 20px;
   list-style: none;
+  z-index: 12;
 }
 .mobile-menu__list-item {
   border-top: 1pt solid $background-modal-line;
@@ -58,4 +59,79 @@
   &:focus {
     color: $background-hover;
   }
+}
+
+//___________________
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  12% {
+    opacity: 1;
+  }
+  80% {
+    top: 90%;
+  }
+
+  96% {
+    top: 90%;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+.drop {
+  opacity: 1;
+  position: absolute;
+  z-index: 11;
+  left: 10%;
+  top: 10%;
+  width: 24px;
+  height: 32px;
+  background-image: linear-gradient(-1deg, rgba(240, 150, 168, 0.8), rgba(225, 121, 146, 0.1));
+  border-radius: 80%;
+  transform: rotate(-3deg);
+  border-top-left-radius: -6;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-name: drop;
+}
+
+.drop--1 {
+  animation-duration: 22s;
+  animation-delay: 0ms;
+  left: -2%;
+  top: 6%;
+}
+
+.drop--2 {
+  opacity: 1;
+  animation-duration: 28s;
+  animation-delay: 0ms;
+  left: 92%;
+  top: 10%;
+}
+
+.drop--3 {
+  animation-duration: 12s;
+  animation-delay: 0ms;
+  left: 6%;
+  top: 50%;
+}
+
+.drop--4 {
+  animation-duration: 32s;
+  animation-delay: 0ms;
+  left: 80%;
+  top: 55%;
+}
+
+.drop--5 {
+  animation-duration: 20s;
+  animation-delay: 0ms;
+  left: 58%;
+  top: 58%;
 }
