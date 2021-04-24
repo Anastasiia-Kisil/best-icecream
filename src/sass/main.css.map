@@ -9,7 +9,8 @@
         "utils/_hidden.scss",
         "layout/_reviews.scss",
         "components/_action-button.scss",
-        "components/_simple-button.scss"
+        "components/_simple-button.scss",
+        "layout/_header.scss"
     ],
     "names": [],
     "file": "main.css"
