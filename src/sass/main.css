@@ -98,7 +98,7 @@ svg {
 
 .modal {
   position: relative;
-  max-width: 260px;
+  min-width: 260px;
   max-height: 502px;
   top: 50%;
   left: 50%;
@@ -210,6 +210,10 @@ svg {
   color: #c7133e;
 }
 
+label .checkbox {
+  width: 20px;
+}
+
 .form-label {
   font-size: 12px;
   color: #e18298;
@@ -245,6 +249,12 @@ svg {
 .close-btn__icon {
   width: 14px;
   height: 14px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 
 .action-btn--crimson,
@@ -1922,13 +1932,13 @@ svg {
   border: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button__burger-btn {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .button__burger-btn {
     display: none;
   }
@@ -1947,7 +1957,7 @@ svg {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button__order-btn {
     display: none;
   }
