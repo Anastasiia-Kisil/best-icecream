@@ -394,7 +394,7 @@ svg {
         flex-wrap: wrap;
     margin-left: -60px;
   }
-  .container {
+  .advantages .container {
     padding-right: 60px;
   }
   .advantages__item {
@@ -1667,7 +1667,7 @@ svg {
 
 .footer {
   padding-top: 55px;
-  padding-bottom: 100%;
+  padding-bottom: 25px;
   background-color: #fff5f6;
 }
 
@@ -1765,8 +1765,7 @@ svg {
 }
 
 .copyright {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 22px;
 }
 
 .copyright___line {
