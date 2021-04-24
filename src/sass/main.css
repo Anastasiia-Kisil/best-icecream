@@ -864,7 +864,8 @@ svg {
 .contacts {
   padding-top: 42px;
   padding-bottom: 65px;
-  background: #fff5f6;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, white), color-stop(25%, #fff5f6));
+  background: linear-gradient(180deg, white 10%, #fff5f6 25%);
 }
 
 .contacts-card {
@@ -1004,6 +1005,19 @@ svg {
 }
 
 .button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 54px;
 }
 
@@ -1011,11 +1025,11 @@ svg {
   margin-bottom: 10px;
 }
 
-.button-list-margin {
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 79px;
+  }
   .contacts-card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1029,7 +1043,7 @@ svg {
     -ms-flex-preferred-size: calc(100% / 3 - 20px);
         flex-basis: calc(100% / 3 - 20px);
     margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 20px;
     padding: 50px 31px;
   }
   .contacts-card__type {
@@ -1077,9 +1091,13 @@ svg {
     line-height: 1.85;
   }
   .button-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .button-list__item:not(:last-child) {
     margin-right: 15px;
@@ -1087,6 +1105,10 @@ svg {
 }
 
 @media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 54px;
+    padding-bottom: 85px;
+  }
   .contacts-card {
     padding-right: 115px;
     padding-left: 115px;
@@ -1097,7 +1119,7 @@ svg {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-right: 30px;
+    margin-top: 30px;
   }
 }
 
