@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./../images/reviews/quotes.png":[["quotes.7652c3c3.png","sxMw"],"sxMw"],"./../images/reviews/dots.png":[["dots.8979c218.png","N83F"],"N83F"],"./../images/reviews/Ellipse-gray.svg":[["Ellipse-gray.e4625b87.svg","Prob"],"Prob"],"./../images/reviews/Home-icon.svg":[["Home-icon.b856893d.svg","kum0"],"kum0"],"./../images/advantages/x1/icon2-advantages.png":[["icon2-advantages.780d084a.png","n1Pu"],"n1Pu"],"./../images/advantages/x1/icon1-advantages.png":[["icon1-advantages.00b6fe6a.png","B2KU"],"B2KU"],"./../images/advantages/x1/icon3-advantages.png":[["icon3-advantages.b2ed9707.png","BpIy"],"BpIy"]}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/best-icecream/src.f9b52ed7.js.map
+//# sourceMappingURL=/best-icecream/src.78b4d347.js.map
