@@ -6,37 +6,54 @@
     max-width: 1280px;
     margin: 0 auto;
     height: 100vh;
-     background-image: url('../images/hero/tel/x1/icecream-tel.png');
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+    background-image: url('../images/hero/tel/x1/icecream-tel.png'), url('../images/hero/tel/x1/ellipse-tel.png');
     background-repeat: no-repeat;
-    background-size: 171px 80vh;
-    background-position: bottom right 20vw;
+    background-size: 171px 410px, 346px 344px;
+    background-position: bottom left 60%;
     
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/hero/tel/x2/icecream-tel@2x.png');
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+       background-image: url('../images/hero/tel/x2/icecream-tel@2x.png'), url('../images/hero/tel/x2/ellipse-tel@2x.png');
     }
+}
+
  
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
         padding-top: 102px;
         padding-bottom: 34px;
-        height: 499px;
+        height: 399px;
 
-        background-image: url('../images/hero/tablet/x1/icecream-tablet.png');
+        background-image: url('../images/hero/tablet/x1/icecream-tablet.png'), url('../images/hero/tablet/x1/ellipse-tablet.png');
         background-repeat: no-repeat;
-        // background-size: 143px 336px;
-        background-position: bottom left 45vw;
+        background-size: 143px 336px, 324px 322px;
+        background-position: bottom left 60%, center left 60%;
     
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            background-image: url('../images/hero/tablet/x2/icecream-tablet@2x.png');
+            background-image: url('../images/hero/tablet/x2/icecream-tablet@2x.png'), url('../images/hero/tablet/x2/ellipse-tablet@2x.png');
         }
     }
 
     @media screen and (min-width: 1280px) {
         padding-top: 171px;
         padding-bottom: 56px;
+        height: 665px;
+
+        background-image: url('../images/hero/desktop/x1/icecream-desktop.png'), url('../images/hero/desktop/x1/ellipse-desktop.png');
+        background-repeat: no-repeat;
+        background-size: 236px 557px, 538px 538px;
+        background-position: bottom left 60%, center left 60%;
+    
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/hero/desktop/x2/icecream-desktop@2x.png'), url('../images/hero/desktop/x2/ellipse-desktop@2x.png');
+        }
     }
 
     &__title {
