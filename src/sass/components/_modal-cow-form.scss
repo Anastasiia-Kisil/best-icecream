@@ -60,10 +60,11 @@
   }
   &__list {
     padding-left: 40px;
-
-    &-des {
-      padding-left: 20px;
-    }
+  }
+  &__list-des {
+    padding-left: 20px;
+    list-style-type: '❤ ';
+    color: $background-image;
   }
 }
 
@@ -103,6 +104,7 @@
   border: none;
   border-radius: 50%;
   color: #d41443;
+  cursor: pointer;
 
   &__icon-des {
     width: 14px;
