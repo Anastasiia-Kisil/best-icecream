@@ -135,6 +135,11 @@
             fill: $text-color-title;
             border-radius: 50%; 
 
+            @media screen and (min-width: $desktop) {
+                width: 8px;
+                height: 8px;
+            }
+
         }
 
         @media screen and (max-width:$max-mobile) {
