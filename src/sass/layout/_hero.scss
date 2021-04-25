@@ -19,14 +19,11 @@
 
     @media screen and (max-width: $max-mobile) {
         padding-top: 137px;
-        // padding-top: 28.542vh;
     }
 
     @media screen and (min-width: $tablet){
         padding-top: 102px;
-        // padding-top: 13.281vw;
         height: 399px;
-        // height: 51.953vh;
     }
 
     @media screen and (min-width: $desktop) {
@@ -59,9 +56,7 @@
             font-size: 22px;
             line-height: 0.88;
             max-width: 162px;
-            // max-width: 18vw;
             margin-bottom: 20px;
-            // margin-bottom: 2.604vh;
             
             &--accent {
                 font-size: 34px;
@@ -73,9 +68,7 @@
             font-size: 38px;
             line-height: 0.86;
             max-width: 277px;
-            // max-width: 25.648vw;
             margin-bottom: 25px;
-            // margin-bottom: 2.315vw;
             
             &--accent {
                 font-size: 58px;
@@ -164,11 +157,11 @@
         
         @media screen and (min-width:$tablet) {
             margin-bottom: 66px;
-            // margin-bottom: 8.594vh;
+            
         }
         @media screen and (min-width: $desktop) {
             margin-bottom: 112px;
-            // margin-bottom: 8.750vh;
+            
         }
     }
 
@@ -339,39 +332,3 @@
     }
 }
 
-
- // @media screen and (max-width:$max-mobile){
-        
-        
-
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: top left;
-    //     background-image: url('../images/hero/tablet/x1/ellipse-tablet.png');
-    
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     background-image: url('../images/hero/tablet/x2/ellipse-tablet@2x.png');
-        
-    //     }
-
-        
-    // }
-
-    // @media screen and (min-width: $tablet){
-    //     width: 324px;
-    //     height: 322px;
-
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: center center;
-    //     background-image: url('../images/hero/tablet/x1/ellipse-tablet.png');
-    
-    //     @media (min-device-pixel-ratio: 2),
-    //         (min-resolution: 192dpi),
-    //         (min-resolution: 2dppx) {
-    //         background-image: url('../images/hero/tablet/x2/ellipse-tablet@2x.png');
-    //     }
-    // }
