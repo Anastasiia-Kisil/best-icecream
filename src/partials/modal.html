@@ -1,0 +1,39 @@
+<div class="backdrop is-hidden" data-modal-form>
+  <div class="modal">
+    <form class="form" action="telegram.php" method="POST">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="form-inner">
+        <h3>Order</h3>
+        <label class="form-label">
+          Name
+          <input type="name" name="user_name" />
+        </label>
+        <label class="form-label">
+          Phone
+          <input type="tel" name="user_phone" />
+        </label>
+        <label class="form-label">
+          Email
+          <input type="email" mame="user_email" />
+        </label>
+        <p class="title-checkbox">Select product</p>
+        <label class="checkbox">
+          <input class="checkbox__inpu" type="checkbox" name="product" value="icecream" />Icecream
+        </label>
+        <label class="checkbox">
+          <input checkbox__inpu type="checkbox" name="product" value="icecoffee" />Icecoffee
+        </label>
+        <label class="checkbox">
+          <input checkbox__inpu type="checkbox" name="product" value="milkshake" />Milkshake
+        </label>
+        <button class="modal-form__button" type="submit">Send</button>
+      </div>
+    </form>
+    <button type="button" class="close-btn" data-modal-form-close>
+      <svg class="close-btn__icon">
+        <use href="./images/sprite.svg/#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>

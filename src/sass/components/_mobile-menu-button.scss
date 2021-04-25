@@ -1,0 +1,15 @@
+.menu-btn {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  border-style: none;
+  cursor: pointer;
+
+  color: $background-accent;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: $background-hover;
+  }
+}

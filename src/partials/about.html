@@ -1,0 +1,50 @@
+<section class="about">
+  <div class="container">
+    <h2 class="about__title">how it’s made?</h2>
+    <div class="about__container">
+      <picture>
+        <source
+          srcset="
+            ./images/about/desktop/x1/cow-desktop.png    1x,
+            ./images/about/desktop/x2/cow-desktop@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/about/tablet/x1/cow-tablet.png    1x,
+            ./images/about/tablet/x2/cow-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about/tel/x1/cow-tel.png 1x, ./images/about/tel/x2/cow-tel@2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img
+          class="about__img"
+          src="./images/about/tel/x1/cow-tel.png"
+          alt="Корова с кувшином молока"
+        />
+      </picture>
+      <div class="about__box-text">
+        <p class="about__text-top">
+          We've been making our own ice cream since the Spring of 1985, which means we know a thing
+          or two about how to serve up the creamiest, best tasting scoops in the city!
+        </p>
+        <p class="about__text-bottom">
+          We start with only the finest quality ingredients. We don't use an item simply because
+          it's convenient or because it's the most affordable option. Each ingredient is, without a
+          doubt, the BEST available!
+        </p>
+        <p class="about__text-bottom_end">To find out more, click on "Read more".</p>
+        <button class="about__btn action-btn--light">
+          Read more
+          <svg class="about__icon" width="10" height="10">
+            <use xlink:href="./images/sprite.svg#arrow-btn-2"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

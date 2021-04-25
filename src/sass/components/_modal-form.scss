@@ -1,0 +1,135 @@
+.modal {
+  position: relative;
+  min-width: 260px;
+  max-height: 502px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 30px;
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #fff5f6;
+  border-radius: 20px;
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 20px;
+  border-radius: 30px;
+  background: white;
+}
+.form-left-decoration:before {
+  top: -20px;
+}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 6px;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.form-inner input {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  background: #e9eff6;
+  line-height: 30px;
+  border-width: 0;
+  border-radius: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form-inner h3 {
+  margin-top: 0;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 24px;
+  color: #d41443;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  color: $background-hover;
+}
+
+label .checkbox {
+  width: 20px;
+}
+
+.form-label {
+  font-size: 12px;
+  color: $background-modal-line;
+  margin-bottom: 10px;
+}
+
+.title-checkbox {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: $main-font;
+  color: $text-color-title;
+}
+
+.modal-form__button {
+  background-color: #d41443;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 auto;
+}
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  color: #d41443;
+
+  &__icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
+}
