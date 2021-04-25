@@ -427,7 +427,7 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px auto;
-  width: 280px;
+  max-width: 926px;
   padding-top: 44px;
   padding-bottom: 26px;
   background-color: #fafafa;
@@ -435,7 +435,6 @@ svg {
 
 @media screen and (min-width: 768px) {
   .reviews__description-wrapper {
-    width: 620px;
     margin-top: 20px;
     margin-bottom: 24px;
     padding-top: 47px;
@@ -445,7 +444,6 @@ svg {
 
 @media screen and (min-width: 1280px) {
   .reviews__description-wrapper {
-    width: 926px;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-bottom: 40px;
@@ -1922,13 +1920,13 @@ svg {
   border: none;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .button__burger-btn {
     margin-right: 30px;
   }
 }
 
-@media screen and (min-width: 1279px) {
+@media screen and (min-width: 1280px) {
   .button__burger-btn {
     display: none;
   }
@@ -1947,7 +1945,7 @@ svg {
   font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .button__order-btn {
     display: none;
   }
