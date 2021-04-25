@@ -1,35 +1,35 @@
 <?php
- 
-/* https://api.telegram.org/bot1718431015:AAG7UHnTO6elVUHugG3sDkI45J4n8-R6NSI/getUpdates,
+
+/* https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
- 
-//Переменная $name,$phone, $mail получает данные при помощи метода POST из формы
+
+/* Переменная $name,$phone, $mail получает данные при помощи метода POST из формы */
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
- 
-//в переменную $token нужно вставить токен, который нам прислал @botFather
+
+/* //в переменную $token нужно вставить токен, который нам прислал @botFather */
 $token = "1718431015:AAG7UHnTO6elVUHugG3sDkI45J4n8-R6NSI";
- 
-//нужна вставить chat_id (Как получить chad id, читайте ниже)
+
+/* //нужна вставить chat_id (Как получить chad id, читайте ниже) */
 $chat_id = "-507769738";
- 
-//Далее создаем переменную, в которую помещаем PHP массив
+
+/* //Далее создаем переменную, в которую помещаем PHP массив */
 $arr = array(
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
   'Email' => $email
 );
- 
-//При помощи цикла перебираем массив и помещаем переменную $txt текст из массива $arr
+
+/* //При помощи цикла перебираем массив и помещаем переменную $txt текст из массива $arr */
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
- 
-//Осуществляется отправка данных в переменной $sendToTelegram
+
+/* //Осуществляется отправка данных в переменной $sendToTelegram */
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
- 
-//Если сообщение отправлено, напишет "Thank you", если нет - "Error"
+
+/* //Если сообщение отправлено, напишет "Thank you", если нет - "Error" */
 if ($sendToTelegram) {
   echo "Thank you";
 } else {
