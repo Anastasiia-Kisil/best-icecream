@@ -11,7 +11,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $text-color-title;
 
     &::before {
       display: block;
