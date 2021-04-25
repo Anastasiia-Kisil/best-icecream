@@ -1,0 +1,327 @@
+// ================== MOBILE ====================
+
+.contacts {
+  padding-top: 42px;
+  padding-bottom: 65px;
+  background: linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(255, 245, 246) 0);
+}
+
+.contacts-card {
+  justify-content: center;
+
+  &__item {
+    background: $main-white-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    width: 220px;
+    height: 100%;
+
+    padding: 44px 20px;
+
+    margin: 0 auto;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+  }
+
+  &__type {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.8;
+    letter-spacing: 0.04em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: $main-white-color;
+    text-transform: uppercase;
+
+    background-color: $background-beige;
+    border-radius: 4px;
+    width: 80px;
+    height: 16px;
+
+    margin-bottom: 25px;
+
+    &--foodtrack {
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.8;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      letter-spacing: 0.04em;
+
+      color: $main-white-color;
+      text-transform: uppercase;
+
+      background: $background-green;
+      border-radius: 4px;
+      width: 130px;
+      height: 16px;
+
+      margin-bottom: 25px;
+    }
+  }
+
+  &__location {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+
+    color: $main-black-color;
+
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+
+    color: $text-color-accent;
+
+    display: block;
+    margin-bottom: 25px;
+  }
+}
+
+.schedule-list {
+  margin-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &__days {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+
+    color: $main-black-color;
+  }
+
+  &__time {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+
+    color: $background-image;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.connection-list {
+  &__link {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: #907e82;
+  }
+}
+
+.button-list {
+  text-align: center;
+  margin-top: 54px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+// ================== TAB ====================
+@media screen and (min-width: $tablet) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 79px;
+    background: linear-gradient(180deg, rgb(255, 255, 255) 17%, rgb(255, 245, 246) 0);
+  }
+
+  .contacts-card {
+    display: flex;
+
+    margin-left: -20px;
+    margin-top: -20px;
+
+    &__item {
+      flex-basis: calc(100% / 3 - 20px);
+
+      margin-left: 20px;
+      margin-top: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &__type {
+      font-size: 16px;
+      line-height: 1.88;
+
+      border-radius: 6px;
+      width: 73px;
+      height: 28px;
+
+      margin-bottom: 30px;
+
+      &--foodtrack {
+        font-size: 16px;
+        line-height: 1.88;
+
+        border-radius: 6px;
+        width: 138px;
+        height: 28px;
+
+        margin-bottom: 30px;
+      }
+    }
+
+    &__location {
+      font-size: 14px;
+
+      margin-bottom: 14px;
+    }
+
+    &__description {
+      font-size: 14px;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  .schedule-list {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__days {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+
+    &__time {
+      font-size: 14px;
+      line-height: 1.85;
+      letter-spacing: 0.01em;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .connection-list {
+    &__link {
+      font-size: 14px;
+      line-height: 1.85;
+    }
+  }
+
+  .button-list {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 81px;
+
+    &__item:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+// ================== DESCKTOP ====================
+@media screen and (min-width: $desktop) {
+  .contacts {
+    padding-top: 54px;
+    padding-bottom: 85px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $background-accent-light;
+    background-image: url('../images/contacts/desktop/x1/contacts-desktop.png');
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/contacts/desktop/x2/contacts-desktop@2x.png');
+    }
+  }
+
+  .contacts-card {
+    margin-left: -30px;
+    margin-top: -30px;
+
+    &__item {
+      flex-basis: calc(100% / 3 - 30px);
+
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+
+    &__location {
+      font-size: 16px;
+
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      font-size: 16px;
+
+      margin-bottom: 32px;
+    }
+  }
+
+  .schedule-list {
+    margin-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &__days {
+      font-size: 16px;
+    }
+
+    &__time {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  .connection-list {
+    &__link {
+      font-size: 16px;
+    }
+  }
+
+  .button-list {
+    margin-top: 82px;
+  }
+}
