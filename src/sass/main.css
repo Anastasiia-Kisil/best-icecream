@@ -1680,7 +1680,7 @@ svg {
   letter-spacing: 0.04em;
   color: #ffa5ba;
   width: 230px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .footer__tittle--dark {
@@ -1692,7 +1692,7 @@ svg {
   letter-spacing: 0.04em;
   color: #d41443;
   width: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .social-list {
@@ -1702,7 +1702,7 @@ svg {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 
 .social-list__item {
@@ -1724,7 +1724,7 @@ svg {
 }
 
 .social-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 28px;
 }
 
 .social-list__item:hover, .social-list__item:focus {
@@ -1761,6 +1761,12 @@ svg {
 
 .footer__kontact-link {
   color: #d41443;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__kontact-link:hover, .footer__kontact-link:focus {
+  color: #e17992;
 }
 
 .copyright {
@@ -1913,7 +1919,7 @@ svg {
     height: 20px;
   }
   .footer__kontact {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.02em;

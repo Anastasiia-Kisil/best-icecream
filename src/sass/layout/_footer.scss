@@ -15,7 +15,7 @@
   color: $background-image;
 
   width: 230px;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 .footer__tittle--dark {
   text-transform: uppercase;
@@ -27,16 +27,16 @@
   color: $text-color-title;
 
   width: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .social-list {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
 }
 .social-list__item {
   &:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 28px;
   }
 
   display: flex;
@@ -76,6 +76,12 @@
 }
 .footer__kontact-link {
   color: $text-color-title;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $background-modal;
+  }
 }
 .copyright {
   padding-top: 22px;
@@ -240,7 +246,7 @@
     height: 20px;
   }
   .footer__kontact {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.02em;
