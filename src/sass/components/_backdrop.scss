@@ -24,10 +24,11 @@
   height: 100%;
   opacity: 1;
   background-color: rgb(255, 245, 246, 0.8);
-  transition: opacity 250ms $timing-function;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+}
 
-  &.is-hidden-des {
-    opacity: 0;
-    pointer-events: none;
-  }
+.is-hidden-cow {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
