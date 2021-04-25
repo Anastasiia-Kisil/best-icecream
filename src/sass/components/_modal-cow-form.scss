@@ -1,0 +1,111 @@
+.modal-des {
+  padding: 30px 30px;
+  position: relative;
+  max-width: 700px;
+  max-height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: $secondary-font;
+    font-size: 24px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color-title;
+  }
+  &__subtitle {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-family: $secondary-font;
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $background-image;
+    &-servings {
+      font-size: 9px;
+    }
+  }
+
+  &__text-material {
+    font-weight: 500;
+    font-size: 3.3vw;
+    line-height: 1.62;
+    letter-spacing: normal;
+    color: $main-black-color;
+  }
+  &__text-des {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 3.3vw;
+    line-height: 1.62;
+    letter-spacing: normal;
+    color: $text-color-accent;
+  }
+
+  &__text {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 3vw;
+    line-height: 1.62;
+    letter-spacing: normal;
+    color: $text-color-accent;
+  }
+  &__list {
+    padding-left: 40px;
+
+    &-des {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-des {
+    max-width: 720px;
+    max-height: 500px;
+
+    &__title {
+      font-size: 34px;
+    }
+    &__subtitle {
+      &-servings {
+        font-size: 9px;
+      }
+    }
+
+    &__text-material {
+      font-size: 12px;
+    }
+    &__text-des {
+      font-size: 12px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}
+// ____________________________________________
+
+.close-btn-des {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  color: #d41443;
+
+  &__icon-des {
+    width: 14px;
+    height: 14px;
+  }
+}
