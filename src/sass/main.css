@@ -871,9 +871,293 @@ label .checkbox {
   }
 }
 
+.contacts {
+  padding-top: 42px;
+  padding-bottom: 65px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(8%, white), color-stop(0, #fff5f6));
+  background: linear-gradient(180deg, white 8%, #fff5f6 0);
+}
+
+.contacts-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts-card__item {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  width: 220px;
+  height: 100%;
+  padding: 44px 20px;
+  margin: 0 auto;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-card__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-card__item:hover, .contacts-card__item:focus {
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.contacts-card__type {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.04em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #f0d1a5;
+  border-radius: 4px;
+  width: 80px;
+  margin-bottom: 25px;
+}
+
+.contacts-card__type--foodtrack {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #c2e297;
+  border-radius: 4px;
+  width: 130px;
+  margin-bottom: 25px;
+}
+
+.contacts-card__location {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.85;
+  letter-spacing: 0.04em;
+  color: #000000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contacts-card__description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #907e82;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.schedule-list {
+  margin-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.schedule-list__days {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000000;
+}
+
+.schedule-list__time {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #ffa5ba;
+}
+
+.schedule-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.connection-list__link {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+.button-list {
+  text-align: center;
+  margin-top: 54px;
+}
+
+.button-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 60px;
+    padding-bottom: 79px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(17%, white), color-stop(0, #fff5f6));
+    background: linear-gradient(180deg, white 17%, #fff5f6 0);
+  }
+  .contacts-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .contacts-card__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 20px);
+        flex-basis: calc(100% / 3 - 20px);
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 50px 31px;
+  }
+  .contacts-card__type {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__type--foodtrack {
+    font-size: 16px;
+    line-height: 1.88;
+    border-radius: 6px;
+    width: 138px;
+    height: 28px;
+    margin-bottom: 30px;
+  }
+  .contacts-card__location {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  .contacts-card__description {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .schedule-list {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .schedule-list__days {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .schedule-list__time {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.01em;
+  }
+  .schedule-list__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .connection-list__link {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .button-list__item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts {
+    padding-top: 54px;
+    padding-bottom: 85px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #fff5f6;
+    background-image: url("../images/contacts/desktop/x1/contacts-desktop.png");
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .contacts {
+    background-image: url("../images/contacts/desktop/x2/contacts-desktop@2x.png");
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contacts-card {
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .contacts-card__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 51px 43px 62px;
+  }
+  .contacts-card__location {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .contacts-card__description {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .schedule-list {
+    margin-bottom: 33px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .schedule-list__days {
+    font-size: 16px;
+  }
+  .schedule-list__time {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
+  .connection-list__link {
+    font-size: 16px;
+  }
+
 .hero .container {
   position: relative;
   height: 100%;
+
 }
 
 .hero {
