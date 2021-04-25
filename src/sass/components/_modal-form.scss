@@ -70,7 +70,7 @@
 
 .form-inner h3 {
   margin-top: 0;
-  font-family: $main-font;
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 24px;
   color: #d41443;
@@ -78,6 +78,9 @@
   margin-bottom: 10px;
 }
 
+.label-title {
+  width: 20px;
+}
 .checkbox {
   display: flex;
   align-items: center;
@@ -86,10 +89,6 @@
   margin-bottom: 15px;
   font-family: $secondary-font;
   color: $background-hover;
-}
-
-label .checkbox {
-  width: 20px;
 }
 
 .form-label {
@@ -106,13 +105,19 @@ label .checkbox {
 }
 
 .modal-form__button {
-  background-color: #d41443;
+  background-color: $text-color-title;
   color: #fff;
   width: 120px;
   height: 40px;
   border-radius: 20px;
   border: none;
   margin: 0 auto;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $background-hover;
+  }
 }
 .close-btn {
   position: absolute;
@@ -120,16 +125,34 @@ label .checkbox {
   right: 16px;
   background-color: transparent;
   border: none;
-  color: #d41443;
 
   &__icon {
     width: 14px;
     height: 14px;
+    fill: #d41443;
   }
 }
 
 @media screen and (min-width: 480px) {
   .modal {
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .form-inner input {
+    line-height: 40px;
+  }
+
+  .form-label {
+    font-size: 16px;
+  }
+
+  .checkbox {
+    margin-bottom: 16px;
+  }
+
+  .modal-form__button {
+    width: 150px;
   }
 }
