@@ -1,7 +1,7 @@
-@import './base/common';
 @import './utils/variables';
-@import './base/container';
 @import './utils/hidden';
+@import './base/common';
+@import './base/container';
 @import './components/backdrop';
 @import './components/modal-form';
 @import './components/modal-cow-form';
@@ -21,3 +21,5 @@
 @import './components/mobile-menu-button';
 @import './layout/header';
 @import './layout/footer';
+@import './layout/gallery';
+
