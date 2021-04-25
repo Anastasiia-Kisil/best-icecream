@@ -42,6 +42,8 @@
   margin: 30px auto;
   max-width: 926px;
   // width: 280px;
+  // padding-left: 56px;
+  // padding-right: 56px;
   padding-top: 44px;
   padding-bottom: 26px;
 
@@ -53,18 +55,21 @@
     margin-bottom: 24px;
     padding-top: 47px;
     padding-bottom: 34px;
+    // padding-left: 80px;
+    // padding-right: 80px;
   }
 
   @media screen and (min-width: $desktop) {
     // width: 926px;
     margin-top: 15px;
     margin-bottom: 15px;
+    // padding-left: 88px;
+    // padding-right: 88px;
     padding-bottom: 40px;
   }
 }
 .reviews__text {
-  // width: 158px;
-  // padding: 10px;
+  width: 158px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
@@ -76,15 +81,14 @@
   z-index: 1;
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
-    // width: 460px;
-
+    width: 460px;
     font-size: 14px;
     line-height: 2.14;
     letter-spacing: 0.04em;
   }
 
   @media screen and (min-width: 1280px) {
-    // width: 750px;
+    width: 750px;
     font-size: 16px;
     line-height: 1.87;
   }
