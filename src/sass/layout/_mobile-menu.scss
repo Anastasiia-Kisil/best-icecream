@@ -12,22 +12,26 @@
   height: 100vh;
   background-color: $background-modal;
   padding: 40px 20px;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   overflow: auto;
   z-index: 10;
+  // margin: -10px;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 411px) {
     width: 250px;
   }
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 
-  &.is-open {
-    opacity: 1;
-    visibility: visible;
+  &.menu--hidden {
+    opacity: 0;
+    visibility: hudden;
     overflow: scroll;
   }
 }
@@ -61,7 +65,13 @@
   }
 }
 
-//___________________
+//body overflow block
+
+.overflow--blocked {
+  overflow-y: hidden;
+}
+
+//drop animation
 
 @keyframes drop {
   0% {

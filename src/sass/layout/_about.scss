@@ -1,6 +1,5 @@
 .about {
   background-color: $background-accent-light;
-  background-position-y: 90%;
   padding-top: 125px;
   padding-bottom: 20px;
 
@@ -12,7 +11,7 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $text-color-title;
 
     &::before {
       display: block;
