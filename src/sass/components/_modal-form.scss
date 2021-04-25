@@ -1,6 +1,6 @@
 .modal {
   position: relative;
-  max-width: 260px;
+  min-width: 260px;
   max-height: 502px;
   top: 50%;
   left: 50%;
@@ -88,6 +88,10 @@
   color: $background-hover;
 }
 
+label .checkbox {
+  width: 20px;
+}
+
 .form-label {
   font-size: 12px;
   color: $background-modal-line;
@@ -121,5 +125,11 @@
   &__icon {
     width: 14px;
     height: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
   }
 }
