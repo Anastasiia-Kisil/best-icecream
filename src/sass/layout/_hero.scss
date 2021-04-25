@@ -1,6 +1,7 @@
 .hero .container {
     position: relative;
     height: 100%;
+    overflow: hidden;
 }
 .hero .wrapper {
     position: absolute;
@@ -14,17 +15,15 @@
     min-width: 320px;
     max-width: 1280px;
     background-color: $background-accent;
+    transition: all 0.2s ease 0s;
 
     @media screen and (max-width: $max-mobile) {
         padding-top: 137px;
-        // padding-top: 28.542vh;
     }
 
     @media screen and (min-width: $tablet){
         padding-top: 102px;
-        // padding-top: 13.281vw;
         height: 399px;
-        // height: 51.953vh;
     }
 
     @media screen and (min-width: $desktop) {
@@ -45,6 +44,7 @@
         color: $main-white-color;
         margin-bottom: 19px;
         z-index: 5;
+        transition: all 0.2s ease 0s;
 
         &--accent {
             font-size: 48px;
@@ -56,9 +56,7 @@
             font-size: 22px;
             line-height: 0.88;
             max-width: 162px;
-            // max-width: 18vw;
             margin-bottom: 20px;
-            // margin-bottom: 2.604vh;
             
             &--accent {
                 font-size: 34px;
@@ -70,9 +68,7 @@
             font-size: 38px;
             line-height: 0.86;
             max-width: 277px;
-            // max-width: 25.648vw;
             margin-bottom: 25px;
-            // margin-bottom: 2.315vw;
             
             &--accent {
                 font-size: 58px;
@@ -83,6 +79,8 @@
     }
 
     &__desc {
+        transition: all 0.2s ease 0s;
+
         @media screen and (max-width: $max-mobile) {
             display: none;   
         }
@@ -107,6 +105,7 @@
 
     &__desc-text {
         margin-bottom: 7px;
+        transition: all 0.2s ease 0s;
 
         @media screen and (min-width: $desktop) {
             margin-bottom: 20px;
@@ -134,6 +133,7 @@
             height: 6px;
             fill: $text-color-title;
             border-radius: 50%; 
+            transition: all 0.2s ease 0s;
 
             @media screen and (min-width: $desktop) {
                 width: 8px;
@@ -153,14 +153,15 @@
     &__list {
         display: flex;
         flex-direction: row;
+        transition: all 0.2s ease 0s;
         
         @media screen and (min-width:$tablet) {
             margin-bottom: 66px;
-            // margin-bottom: 8.594vh;
+            
         }
         @media screen and (min-width: $desktop) {
             margin-bottom: 112px;
-            // margin-bottom: 8.750vh;
+            
         }
     }
 
@@ -168,6 +169,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.2s ease 0s;
 
         &:not(:last-child) {
             margin-right: 8px;
@@ -181,8 +183,9 @@
 }
 
 .bg-group {
+    transition: all 0.2s ease 0s;
 
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 319px) {
         display: none;
     }
     
@@ -243,6 +246,7 @@
     position: absolute;
     top: 0;
     right: 34px;
+    transition: all 0.2s ease 0s;
 
     @media screen and (max-width: $max-mobile) {
         display: none;
@@ -262,6 +266,7 @@
 
 .hero__bg-23 {
     position: absolute;
+    transition: all 0.2s ease 0s;
     
     @media screen and (max-width: $max-mobile) {
         display: none;
@@ -284,6 +289,7 @@
 
 .hero__bg-milk {
     position: absolute;
+    transition: all 0.2s ease 0s;
 
     @media screen and (max-width: $max-mobile) {
         display: none;
@@ -299,7 +305,7 @@
     @media screen and (min-width: $desktop) {  
         width: 188px;
         height: 191px;
-        left: 0%;
+        left: -28px;
         bottom: 45px;
     }
 }
@@ -308,6 +314,7 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+    transition: all 0.2s ease 0s;
 
     @media screen and (max-width: $max-mobile) {
         display: none;
@@ -325,39 +332,3 @@
     }
 }
 
-
- // @media screen and (max-width:$max-mobile){
-        
-        
-
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: top left;
-    //     background-image: url('../images/hero/tablet/x1/ellipse-tablet.png');
-    
-
-    //     @media (min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     background-image: url('../images/hero/tablet/x2/ellipse-tablet@2x.png');
-        
-    //     }
-
-        
-    // }
-
-    // @media screen and (min-width: $tablet){
-    //     width: 324px;
-    //     height: 322px;
-
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    //     background-position: center center;
-    //     background-image: url('../images/hero/tablet/x1/ellipse-tablet.png');
-    
-    //     @media (min-device-pixel-ratio: 2),
-    //         (min-resolution: 192dpi),
-    //         (min-resolution: 2dppx) {
-    //         background-image: url('../images/hero/tablet/x2/ellipse-tablet@2x.png');
-    //     }
-    // }
