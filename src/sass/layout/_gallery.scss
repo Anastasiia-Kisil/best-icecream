@@ -4,9 +4,31 @@
   // min-width: 320px;
   max-width: 480px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(255, 245, 246, 1) 70%);
+}
+.gallery-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
+}
+.gallery__item {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: $tablet) {
+  .gallery {
+    height: 264px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .gallery {
+    height: 430px;
+    max-width: 1080px;
+  }
 }
 // .gallery {
 //   margin: 0 auto;
