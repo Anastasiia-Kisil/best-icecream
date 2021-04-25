@@ -135,7 +135,7 @@
         margin-bottom: 66px;
         font-family: $secondary-font;
         font-size: 20px;
-        line-height: 1.15;
+        line-height: 1.145;
         font-weight: normal;
         font-style: normal;
         /* identical to box height */
@@ -180,6 +180,7 @@
         border-style: none;
         background-color: $main-white-color;
         transition: $transition-hover-focus; 
+        cursor: pointer;
         &:hover,
         &:Focus {
             background-color: $background-hover;
@@ -232,11 +233,13 @@
     #f89cb3 55%,
     $background-accent); 
     opacity: 0;
+    transform: translateY(45%) scaleY(0);
     transition: $transition-hover-focus;
+    
 }
 .products__btn-wraper:hover .overlay {   
     opacity: 1;
-    transition: opacity 500ms linear;
+    transform: translateY(-1%) scaleY(1);
 }
 
 .products__item-btn:hover {
@@ -282,10 +285,13 @@
             justify-content: center;
             padding-top: 156px;
             margin-left: -20px;
+            margin-top: -20px;
         }     
         &__item {
             padding-top: 152px;
-            flex-basis: calc( 100% / 1 - 20px);
+            flex-basis: calc( 100% / 3  - 20px);
+            margin-left: 20px;
+            margin-top: 20px;
         }
         &__item-description {
             width: 198px;
@@ -296,10 +302,6 @@
         }
         &__text-hide {
             display: none;
-        }
-       
-        &__item:not(:last-child) {
-            margin-right: 20px;
         }
         &__item:nth-child(1) {
             margin-top: 0;
@@ -381,20 +383,21 @@
         &__list {
             padding-top: 256px;
             margin-left: -25px;
+            margin-top: -25px;
         }     
     
         &__item {
             padding-top: 162px;
             padding-bottom: 50px;
-            flex-basis: calc( 100% / 1 - 25px);
-        }
-        &__item:not(:last-child) {
-            margin-right: 25px;
+            margin-left: 25px;
+            margin-top: 25px;
+            flex-basis: calc( 100% / 3 - 25px);
+
         }
         &__item-title {
             margin-bottom: 70px;
-            font-size: 32px;
-            line-height: 1.13;
+            font-size: 30px;
+            line-height: 1.145;
              
         }
         &__item-title::after {        
