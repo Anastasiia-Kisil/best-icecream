@@ -43,7 +43,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    letter-spacing: 0.04em;
 
     color: $main-white-color;
     text-transform: uppercase;
@@ -120,7 +119,6 @@
     line-height: 1.83;
 
     color: $main-black-color;
-    margin-top: 10px;
   }
 
   &__time {
@@ -130,6 +128,10 @@
     line-height: 1.83;
 
     color: $background-image;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -145,10 +147,7 @@
 }
 
 .button-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   margin-top: 54px;
 
   &__item:not(:last-child) {
@@ -176,7 +175,9 @@
       margin-left: 20px;
       margin-top: 20px;
 
-      padding: 50px 31px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
     }
 
     &__type {
@@ -222,14 +223,16 @@
     &__days {
       font-size: 14px;
       line-height: 1.85;
-
-      margin-top: 16px;
     }
 
     &__time {
       font-size: 14px;
       line-height: 1.85;
       letter-spacing: 0.01em;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 16px;
     }
   }
 
@@ -241,8 +244,10 @@
   }
 
   .button-list {
-    flex-direction: row;
-    align-items: baseline;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 81px;
 
     &__item:not(:last-child) {
       margin-right: 15px;
@@ -276,8 +281,6 @@
 
       margin-left: 30px;
       margin-top: 30px;
-
-      padding: 51px 43px 62px;
     }
 
     &__location {
@@ -298,10 +301,12 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
     &__days {
       font-size: 16px;
-
-      margin-top: 15px;
     }
 
     &__time {
@@ -314,5 +319,9 @@
     &__link {
       font-size: 16px;
     }
+  }
+
+  .button-list {
+    margin-top: 82px;
   }
 }

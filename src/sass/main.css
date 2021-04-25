@@ -912,13 +912,11 @@ svg {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #f0d1a5;
   border-radius: 4px;
   width: 80px;
-  height: 16px;
   margin-bottom: 25px;
 }
 
@@ -943,7 +941,6 @@ svg {
   background: #c2e297;
   border-radius: 4px;
   width: 130px;
-  height: 16px;
   margin-bottom: 25px;
 }
 
@@ -983,7 +980,6 @@ svg {
   font-size: 12px;
   line-height: 1.83;
   color: #000000;
-  margin-top: 10px;
 }
 
 .schedule-list__time {
@@ -992,6 +988,10 @@ svg {
   font-size: 12px;
   line-height: 1.83;
   color: #ffa5ba;
+}
+
+.schedule-list__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .connection-list__link {
@@ -1003,19 +1003,7 @@ svg {
 }
 
 .button-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   margin-top: 54px;
 }
 
@@ -1076,25 +1064,26 @@ svg {
   .schedule-list__days {
     font-size: 14px;
     line-height: 1.85;
-    margin-top: 16px;
   }
   .schedule-list__time {
     font-size: 14px;
     line-height: 1.85;
     letter-spacing: 0.01em;
   }
+  .schedule-list__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
   .connection-list__link {
     font-size: 14px;
     line-height: 1.85;
   }
   .button-list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .button-list__item:not(:last-child) {
     margin-right: 15px;
@@ -1146,7 +1135,6 @@ svg {
   }
   .schedule-list__days {
     font-size: 16px;
-    margin-top: 15px;
   }
   .schedule-list__time {
     font-size: 16px;
@@ -1918,10 +1906,13 @@ svg {
   height: 100vh;
   background-color: #e17992;
   padding: 40px 20px;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   overflow: auto;
   z-index: 10;
+  margin: -10px;
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 411px) {
@@ -1930,15 +1921,15 @@ svg {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1280px) {
   .mobile-menu {
     display: none;
   }
 }
 
-.mobile-menu.is-open {
-  opacity: 1;
-  visibility: visible;
+.mobile-menu.menu--hidden {
+  opacity: 0;
+  visibility: hudden;
   overflow: scroll;
 }
 
@@ -1968,6 +1959,10 @@ svg {
 
 .nav-link:hover, .nav-link:focus {
   color: #c7133e;
+}
+
+.overflow--blocked {
+  overflow-y: hidden;
 }
 
 @-webkit-keyframes drop {
@@ -2079,6 +2074,7 @@ svg {
   top: 23px;
   right: 23px;
   border-style: none;
+  cursor: pointer;
   color: #ffb8ca;
   background-color: transparent;
 }
