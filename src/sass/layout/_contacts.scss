@@ -4,9 +4,15 @@
   padding-top: 42px;
   padding-bottom: 65px;
   background: linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(255, 245, 246) 0);
+}
 
-  &__icon {
-    fill: white;
+.contact__icon {
+  margin-left: 12px;
+  fill: $main-white-color;
+
+  &--dark {
+    margin-left: 12px;
+    fill: $text-color-title;
   }
 }
 
