@@ -1,9 +1,19 @@
 // ================== MOBILE ====================
 
 .contacts {
-  padding-top: 42px;
+  padding-top: 43px;
   padding-bottom: 65px;
   background: linear-gradient(180deg, rgb(255, 255, 255) 8%, rgb(255, 245, 246) 0);
+}
+
+.contact__icon {
+  margin-left: 12px;
+  fill: $main-white-color;
+
+  &--dark {
+    margin-left: 12px;
+    fill: $text-color-title;
+  }
 }
 
 .contacts-card {
@@ -107,8 +117,8 @@
 
 .schedule-list {
   margin-bottom: 25px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid $background-reviews;
+  border-bottom: 1px solid $background-reviews;
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -142,7 +152,7 @@
     font-size: 12px;
     line-height: 1.5;
 
-    color: #907e82;
+    color: $text-color-accent;
   }
 }
 
@@ -258,7 +268,7 @@
 // ================== DESCKTOP ====================
 @media screen and (min-width: $desktop) {
   .contacts {
-    padding-top: 54px;
+    padding-top: 66px;
     padding-bottom: 85px;
 
     background-position: center;

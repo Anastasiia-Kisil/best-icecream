@@ -1,12 +1,18 @@
 .menu-btn {
   position: absolute;
   top: 23px;
-  right: 23px;
+  right: 34px;
   border-style: none;
   cursor: pointer;
 
-  color: $background-accent;
+  color: $main-white-color;
   background-color: transparent;
+
+  &__icon-close {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+  }
 
   &:hover,
   &:focus {
