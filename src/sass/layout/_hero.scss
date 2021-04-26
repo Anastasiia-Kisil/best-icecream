@@ -5,8 +5,12 @@
 
 .hero .wrapper {
   position: absolute;
-  top: 0;
+  top: 15%;
   z-index: 1;
+
+  @media screen and (min-width: $tablet) {
+    top: 0%;
+  }
 }
 
 .hero {
@@ -37,7 +41,7 @@
   &__title {
     font-family: Titan One;
     font-size: 26px;
-    line-height: 0.86;
+    line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     max-width: 218px;
@@ -48,31 +52,31 @@
 
     &--accent {
       font-size: 48px;
-      line-height: 1.04;
+      line-height: 0.96;
       color: $text-color-title;
     }
 
     @media screen and (min-width: $tablet) {
       font-size: 22px;
-      line-height: 0.88;
+      line-height: 1.13;
       max-width: 162px;
       margin-bottom: 20px;
 
       &--accent {
         font-size: 34px;
-        line-height: 1.09;
+        line-height: 0.91;
         color: $text-color-title;
       }
     }
     @media screen and (min-width: $desktop) {
       font-size: 38px;
-      line-height: 0.86;
+      line-height: 1.15;
       max-width: 277px;
       margin-bottom: 25px;
 
       &--accent {
         font-size: 58px;
-        line-height: 1.115;
+        line-height: 0.9;
         color: $text-color-title;
       }
     }
