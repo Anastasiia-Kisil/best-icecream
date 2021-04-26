@@ -8,6 +8,7 @@
   opacity: 1;
   background-color: #fff5f6;
   transition: opacity 250ms $timing-function;
+  z-index: 100;
 
   &.is-hidden {
     opacity: 0;
