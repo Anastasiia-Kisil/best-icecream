@@ -1,25 +1,25 @@
-#back-top{
-    position: fixed;
-    bottom: 0px;
-    padding: 0px;
-    right: 0px;
-    bottom: 10%;  
-    z-index:99991;
-    }
+#back-top {
+  position: fixed;
+  bottom: 0px;
+  padding: 0px;
+  right: 0px;
+  bottom: 0%;
+  z-index: 99991;
+}
 
-#back-top a{ 
-    width: 90px;
-    height: 120px;
-    background-repeat: no-repeat;
-    color: #000;
-    background-image: url(../images/moo-mobile.png);
-    display:block;
-    text-decoration:none;
-    -webkit-transition: all linear 0.2s; 
-    -moz-transition: all linear 0.2s;
-    -ms-transition: all linear 0.2s;
-    -o-transition: all linear 0.2s;
-    transition: all linear 0.2s;
-    justify-content: center;
-    text-align: center;
-    }
+#back-top a {
+  width: 90px;
+  height: 120px;
+  background-repeat: no-repeat;
+  color: #000;
+  background-image: url(../images/moo-mobile.png);
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  justify-content: center;
+  text-align: center;
+}
