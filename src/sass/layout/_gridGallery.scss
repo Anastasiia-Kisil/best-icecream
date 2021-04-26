@@ -1,0 +1,111 @@
+.gridGallery {
+  background-color: $background-accent-light;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 100%;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(
+      to bottom,
+      $background-accent-light 0 39.3%,
+      $main-white-color 39.3%
+    );
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      $background-accent-light 0 40.1%,
+      $main-white-color 40.1%
+    );
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      to bottom,
+      $background-accent-light 0 39.77%,
+      $main-white-color 39.77%
+    );
+  }
+}
+
+.gridGallery__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+
+  @media screen and (max-width: 479px) {
+    width: 300px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    height: 264px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 430px;
+  }
+}
+
+.gridGallery__pictures {
+  display: grid;
+  gap: 5px;
+  transform: scale(1);
+  z-index: 0;
+  cursor: pointer;
+
+  :hover,
+  :focus {
+    transform: scale(1.15);
+    z-index: 1;
+  }
+
+  @media screen and (max-width: 479px) {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  }
+
+  @media screen and (min-width: 480px) {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 6px;
+    grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  }
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  }
+}
+
+.gridGallery__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gridGallery__picture {
+  position: relative;
+  padding: 0px 0px 80% 0px;
+  transition-duration: 0.3s;
+  transition-timing-function: $timing-function;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 0px 0px 75% 0px;
+  }
+}
+
+.gridGallery__picture--big {
+  grid-column: span 2;
+  grid-row: span 2;
+
+  @media screen and (max-width: 479px) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
