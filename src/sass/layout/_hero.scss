@@ -1,8 +1,12 @@
 .hero .container {
     position: relative;
     height: 100%;
+}
+
+.hero .container .bg-group {
     overflow: hidden;
 }
+
 .hero .wrapper {
     position: absolute;
     top: 0;
