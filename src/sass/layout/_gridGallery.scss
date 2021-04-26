@@ -56,6 +56,9 @@
 
   :hover,
   :focus {
+    @media screen and (max-width: 480px) {
+      transform: scale(1.25);
+    }
     transform: scale(1.15);
     z-index: 1;
   }
@@ -74,9 +77,11 @@
   }
 }
 .gridGallery__picture {
-  // position: relative;
+  @media screen and (max-width: 479px) {
+    position: relative;
+    padding: 0px 0px 80% 0px;
+  }
   justify-self: center;
-  // padding: 0px 0px 80% 0px;
   transition-duration: 0.3s;
   transition-timing-function: $timing-function;
 
@@ -92,7 +97,7 @@
     grid-column: span 1;
     grid-row: span 1;
   }
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     width: 170px;
     height: 170px;
   }
@@ -101,56 +106,66 @@
     height: 280px;
   }
 }
+@media screen and (max-width: 479px) {
+  .box2 {
+    display: none;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .box2 {
+    grid-column-start: 4;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 17;
+  }
+  .box3 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
 
-.box2 {
-  grid-column-start: 4;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 17;
-}
-.box3 {
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 1;
-  grid-row-end: 4;
-}
+  .box4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 1;
+  }
+  .box8 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  .box9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 1;
+  }
 
-.box4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 4;
-  grid-row-end: 1;
+  .box10 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
 }
-.box8 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 5;
+.gridGallery__picture picture {
+  @media screen and (max-width: 479px) {
+    position: absolute;
+    top: -1px;
+    left: -31px;
+    width: 72px;
+    height: 72px;
+  }
 }
-.box9 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 1;
-}
-
-.box10 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
 .gridGallery__picture img {
   border-radius: 9px;
-
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   @media screen and (min-width: 1280px) {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     border-radius: 20px;
   }
 }
