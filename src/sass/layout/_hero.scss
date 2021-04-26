@@ -3,10 +3,6 @@
     height: 100%;
 }
 
-.hero .container .bg-group {
-    overflow: hidden;
-}
-
 .hero .wrapper {
     position: absolute;
     top: 0;
@@ -20,6 +16,7 @@
     max-width: 1280px;
     background-color: $background-accent;
     transition: all 0.2s ease 0s;
+    // overflow: hidden;
 
     @media screen and (max-width: $max-mobile) {
         padding-top: 137px;
