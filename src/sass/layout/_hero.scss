@@ -277,8 +277,8 @@
       z-index: 1;
       display: flex;
       font-family: $secondary-font;
-      font-size: 46px;
-      line-height: 53px;
+      font-size: 28px;
+      line-height: 32px;
       letter-spacing: 0.04em;
       color:$text-color-title;
 
@@ -287,17 +287,21 @@
         z-index: -1;
         right: -15%;
         content: "";
-        width: 30px;
-        height: 30px;
+        width: 16px;
+        height: 16px;
         border-radius: 50%;
         background: $main-white-color;
         transform: matrix(-1, 0, 0, 1, 0, 0);
       }
 
-      // @media screen and (min-width: $desktop) {
-      //   font-size: 46px;
-      //   line-height: 53px;
-      // }
+      @media screen and (min-width: $desktop) {
+        font-size: 46px;
+        line-height: 53px;
+        &::after {
+          width: 30px;
+          height: 30px;
+        }
+      }
     }
 
     &__weight {
