@@ -1,161 +1,183 @@
-// .gallery {
-//   margin: 0 auto;
-//   height: 430px;
-//   // min-width: 320px;
-//   max-width: 480px;
-//   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(255, 245, 246, 1) 70%);
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: space-around;
-// }
 .gallery {
   margin: 0 auto;
   height: 122px;
-  // min-width: 320px;
-  max-width: 480px;
+  // border: 1px solid #000000;
+  width: 320px;
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(255, 245, 246, 1) 70%);
 }
 .gallery-list {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
+  margin: 0 auto;
+}
+.pic1 {
+  position: relative;
+  top: 20px;
+  // right: 10px;
+}
+.pic2 {
+  position: relative;
+  top: 00px;
+  // right: 10px;
+}
+.pic3 {
+  position: relative;
+  right: 40px;
+  top: 42px;
+}
+.pic4 {
+  position: relative;
+  right: 40px;
+  top: 0px;
+}
+.pic5 {
+  position: relative;
+  right: 120px;
+  top: 60px;
+}
+.pic6 {
+  position: relative;
+  right: 80px;
+  top: 0px;
+}
+.pic7 {
+  position: relative;
+  left: 160px;
+  top: -20px;
+}
+.pic8 {
+  position: relative;
+  left: 160px;
+  top: -70px;
+}
+.pic9 {
+  position: relative;
+  left: 120px;
+  top: -30px;
+}
+.pic99 {
+  position: relative;
+  left: 120px;
+  top: -40px;
 }
 .gallery__item {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     transform: scale(1.2);
-    background-image: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.2) 40%,
-        rgba(255, 245, 246, 0.2) 40%
-      ),
-      url('../images/gallery/tel/x1/gallery-tel.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .gallery {
-      background-image: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.2) 40%,
-          rgba(255, 245, 246, 0.2) 40%
-        ),
-        url('../images/gallery/tel/x2/gallery-tel@2x.jpg');
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    .gallery {
-      height: 264px;
-      max-width: 768px;
-      background-image: linear-gradient(
-          0deg,
-          rgba(255, 255, 255, 0.2) 40%,
-          rgba(255, 245, 246, 0.2) 40%
-        ),
-        url('../images/gallery/tablet/x1/gallery-tablet.jpg');
-    }
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      .gallery {
-        background-image: linear-gradient(
-            0deg,
-            rgba(255, 255, 255, 0.2) 40%,
-            rgba(255, 245, 246, 0.2) 40%
-          ),
-          url('../images/gallery/tablet/x2/gallery-tablet@2x.jpg');
-      }
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    .gallery {
-      height: 430px;
-      max-width: 1080px;
-    }
-  }
-  // .gallery {
-  //   margin: 0 auto;
-  //   height: 122px;
-  //   // min-width: 320px;
-  //   max-width: 480px;
-  //   background-image: linear-gradient(
-  //       0deg,
-  //       rgba(255, 255, 255, 0.2) 40%,
-  //       rgba(255, 245, 246, 0.2) 40%
-  //     ),
-  //     url('../images/gallery/tel/x1/gallery-tel.jpg');
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  // }
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   .gallery {
-  //     background-image: linear-gradient(
-  //         0deg,
-  //         rgba(255, 255, 255, 0.2) 40%,
-  //         rgba(255, 245, 246, 0.2) 40%
-  //       ),
-  //       url('../images/gallery/tel/x2/gallery-tel@2x.jpg');
-  //   }
-  // }
-  // @media screen and (min-width: $tablet) {
-  //   .gallery {
-  //     height: 264px;
-  //     max-width: 768px;
-  //     background-image: linear-gradient(
-  //         0deg,
-  //         rgba(255, 255, 255, 0.2) 40%,
-  //         rgba(255, 245, 246, 0.2) 40%
-  //       ),
-  //       url('../images/gallery/tablet/x1/gallery-tablet.jpg');
-  //   }
-  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //     .gallery {
-  //       background-image: linear-gradient(
-  //           0deg,
-  //           rgba(255, 255, 255, 0.2) 40%,
-  //           rgba(255, 245, 246, 0.2) 40%
-  //         ),
-  //         url('../images/gallery/tablet/x2/gallery-tablet@2x.jpg');
-  //     }
-  //   }
-  // }
-  // @media screen and (min-width: $desktop) {
-  //   .gallery {
-  //     height: 430px;
-  //     max-width: 1280px;
-  //     background-image: linear-gradient(
-  //         0deg,
-  //         rgba(255, 255, 255, 0.2) 40%,
-  //         rgba(255, 245, 246, 0.2) 40%
-  //       ),
-  //       url('../images/gallery/desktop/x1/gallery-desktop.jpg');
-  //   }
-  //   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //     .gallery {
-  //       background-image: linear-gradient(
-  //           0deg,
-  //           rgba(255, 255, 255, 0.2) 40%,
-  //           rgba(255, 245, 246, 0.2) 40%
-  //         ),
-  //         url('../images/gallery/desktop/x2/gallery-desktop@2x.jpg');
-  //     }
-  //   }
-  // }
-  max-width: 1280px;
-  background-image: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.2) 40%,
-      rgba(255, 245, 246, 0.2) 40%
-    ),
-    url('../images/gallery/desktop/x1/gallery-desktop.jpg');
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: $tablet) {
   .gallery {
-    background-image: linear-gradient(
-        0deg,
-        rgba(255, 255, 255, 0.2) 40%,
-        rgba(255, 245, 246, 0.2) 40%
-      ),
-      url('../images/gallery/desktop/x2/gallery-desktop@2x.jpg');
+    height: 264px;
+    width: 768px;
+  }
+  .pic1 {
+    position: relative;
+    top: 43px;
+    // right: 10px;
+  }
+  .pic2 {
+    position: relative;
+    top: 0px;
+    // right: 10px;
+  }
+  .pic3 {
+    position: relative;
+    right: 86px;
+    top: 86px;
+  }
+  .pic4 {
+    position: relative;
+    right: 86px;
+    top: 0px;
+  }
+  .pic5 {
+    position: relative;
+    right: 258px;
+    top: 131px;
+  }
+  .pic6 {
+    position: relative;
+    right: 172px;
+    top: 0px;
+  }
+  .pic7 {
+    position: relative;
+    left: -258px;
+    top: 86px;
+  }
+  .pic8 {
+    position: relative;
+    left: 433px;
+    top: -153px;
+  }
+  .pic9 {
+    position: relative;
+    left: 347px;
+    top: -64px;
+  }
+  .pic99 {
+    position: relative;
+    left: 347px;
+    top: -86px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .gallery {
+    height: 430px;
+    width: 1080px;
+  }
+  .pic1 {
+    position: relative;
+    top: 73px;
+    // right: 10px;
+  }
+  .pic2 {
+    position: relative;
+    top: 0px;
+    // right: 10px;
+  }
+  .pic3 {
+    position: relative;
+    right: 139px;
+    top: 143px;
+  }
+  .pic4 {
+    position: relative;
+    right: 140px;
+    top: 0px;
+  }
+  .pic5 {
+    position: relative;
+    right: 424px;
+    top: 213px;
+  }
+  .pic6 {
+    position: relative;
+    right: 280px;
+    top: 0px;
+  }
+  .pic7 {
+    position: relative;
+    left: -420px;
+    top: 143px;
+  }
+  .pic8 {
+    position: relative;
+    left: 705px;
+    top: -243px;
+  }
+  .pic9 {
+    position: relative;
+    left: 565px;
+    top: -100px;
+  }
+  .pic99 {
+    position: relative;
+    left: 565px;
+    top: -140px;
   }
 }
