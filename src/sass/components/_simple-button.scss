@@ -1,9 +1,3 @@
-//.action-btn--crimson - малиновая кнопка
-//.action-btn--light - светло розовая
-// тут описаны отдельно две кнопки, для каждой кнопки настроены свои ховеры и будет настроена анимации.
-// между 320 и 768  размеры кнопки и шрифты изменяются динамически.
-//* Комментарии удалятся когда закончится работа с кнопками
-
 .simple-btn--crimson,
 .simple-btn--light {
   border-style: none;
@@ -15,6 +9,8 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: center;
+
+  transition: $transition-hover-focus;
 
   cursor: pointer;
 }

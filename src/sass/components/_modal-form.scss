@@ -113,6 +113,7 @@
   border: none;
   margin: 0 auto;
   transition: background-color 250ms $timing-function;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -125,11 +126,17 @@
   right: 16px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &:hover,
+  .close-btn__icon &:focus .close-btn__icon {
+    fill: $background-hover;
+  }
 
   &__icon {
     width: 14px;
     height: 14px;
-    fill: #d41443;
+    fill: $text-color-title;
   }
 }
 

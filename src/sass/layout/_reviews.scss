@@ -1,13 +1,13 @@
 .reviews {
   padding-top: 80px;
-  padding-bottom: 86px;
+  padding-bottom: 43px;
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 122px;
-    padding-bottom: 132px;
+    padding-bottom: 66px;
   }
 }
 .reviews__photo {
