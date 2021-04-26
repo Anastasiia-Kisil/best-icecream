@@ -1,5 +1,20 @@
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 1;
+  background-color: transparent;
+  visibility: visible;
+  pointer-events: none;
+}
+
 .order-btn {
-  margin: 22px auto 22px auto;
+  margin: 20px auto 20px auto;
+  width: 100%;
 }
 
 .mobile-menu {
@@ -14,21 +29,18 @@
   padding: 40px 20px;
   opacity: 1;
   visibility: visible;
-  overflow: auto;
-  z-index: 10;
-
   pointer-events: all;
+  overflow-x: hidden;
+  transform: translateX(0);
 
-
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms $timing-function;
 
   @media screen and (min-width: 375px) {
     width: 250px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 260px;
+    width: 264px;
   }
 
   @media screen and (min-width: 1080px) {
@@ -36,6 +48,7 @@
   }
 
   &.menu--hidden {
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
     overflow: scroll;
@@ -44,7 +57,6 @@
 }
 
 .mobile-menu__list {
-  margin-top: 20px;
   list-style: none;
   z-index: 12;
 }
