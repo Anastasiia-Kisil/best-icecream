@@ -11,6 +11,9 @@
   @media screen and (min-width: 1024px) {
     width: 88%;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1080px;
+  }
 }
 
 .hero .wrapper {
@@ -27,7 +30,7 @@
   margin: 0 auto;
   height: 502px;
   min-width: 320px;
-  max-width: 1280px;
+  // max-width: 1280px;
   background-color: $background-accent;
   overflow: hidden;
   transition: all 0.3s ease 0s;
