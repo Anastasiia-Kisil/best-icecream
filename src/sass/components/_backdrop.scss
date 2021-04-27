@@ -16,7 +16,8 @@
   }
 }
 
-.backdrop-des {
+.backdrop-des,
+.backdrop-map {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -29,7 +30,8 @@
   transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 }
 
-.is-hidden-cow {
+.is-hidden-cow,
+.is-hidden-map {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;

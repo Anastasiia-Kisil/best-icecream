@@ -38,11 +38,18 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <!-- боковая кнопка скрипта прокрутки страницы вверх -->
+
+    <div id="back-top">
+      <a href="#" url="" onclick="return up()"></a>
+
     <div id="back-top" class="scrolling-icon">
       <a href="#top" url="" onclick="return up()"></a>
+
+     
     </div>
     <!-- Modal -->
     <include src="./partials/modal.html"></include>
+    <include src="./partials/modal-contacts.html"></include>
     <!-- Modal cow -->
     <include src="./partials/modal-cow-des.html"></include>
     <include src="./partials/mobile-menu.html"></include>
@@ -62,6 +69,23 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/mobile-menu-cow.js"></script>
+
+    <script src="./js/modal-map.js"></script>
+
+    <script type="text/javascript" src="./js/scrolling.js"></script>
+    <script type="text/javascript" src="./js/scrolling-up.js"></script>
+    <!-- <script>
+        // скрипт прокрутки страницы вверх
+        function up() {  
+        var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);  
+        if(top > 0) {  
+        window.scrollBy(0,((top+400)/-40));  
+        t = setTimeout('up()',5);  
+        } else clearTimeout(t);  
+        return false;  
+        }
+      </script> -->
+
     <script src="./js/masonry.js"></script>
     <script src="./js/gallery.js"></script>
     <script src="./js/hero.js"></script>
@@ -78,5 +102,6 @@
         return false;
       }
     </script> -->
+    
   </body>
 </html>
