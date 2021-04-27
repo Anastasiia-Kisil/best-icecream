@@ -32,6 +32,36 @@
   transition: all 0.3s ease 0s;
   overflow: hidden;
 
+  .bg-effect {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-image: url('../images/hero/snow1.png'), url('../images/hero/snow2.png');
+    animation-name: cangebgimage;
+    animation-duration: 2s;
+    transition-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+
+    @keyframes cangebgimage{
+      0%{
+        opacity:0;transform:translate(0, 30px);;
+      }
+      to{opacity:1;transform:translate(0, 0px);
+      }
+    }
+
+    // animation: cangebgimage 20s linear 0s infinite normal none running snow;
+  }
+
   @media screen and (max-width: $max-mobile) {
     padding-top: 137px;
   }
@@ -246,6 +276,7 @@
     }
   }
 }
+
 
 .hero__bg-16 {
   position: absolute;
