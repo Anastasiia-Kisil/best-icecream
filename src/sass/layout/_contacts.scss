@@ -23,13 +23,10 @@
     background: $main-white-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    width: 220px;
+    min-width: 220px;
     height: 100%;
-
     padding: 44px 20px;
-
     margin: 0 auto;
-
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:not(:last-child) {
