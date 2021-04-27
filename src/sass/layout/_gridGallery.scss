@@ -455,6 +455,10 @@ input:checked + .switch__slider:before {
   }
 }
 
+.promo {
+  background-color: $background-accent-light;
+}
+
 .gallery-box.type-one {
   .promo__picture-container {
     // display: block;
