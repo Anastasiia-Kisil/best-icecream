@@ -2,19 +2,29 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 360px;
+  width: 480px;
   height: 100vh;
   z-index: 10;
   overflow: hidden;
-  opacity: 1;
   background-color: transparent;
-  visibility: visible;
   pointer-events: none;
 }
 
+.close-menu-btn {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  z-index: 14;
+
+  @media screen and (min-width: $tablet) {
+    right: 34px;
+  }
+}
+
 .order-btn {
-  margin: 20px auto 20px auto;
+  margin: 23px auto 20px auto;
   width: 100%;
+  z-index: 14;
 }
 
 .mobile-menu {
@@ -27,13 +37,11 @@
   height: 100vh;
   background-color: $background-modal;
   padding: 40px 20px;
-  opacity: 1;
   visibility: visible;
   pointer-events: all;
-  overflow-x: hidden;
-  transform: translateX(0);
+  transform: translateX(0px);
 
-  transition: transform 250ms $timing-function;
+  transition: transform 250ms $timing-function, visibility 250ms $timing-function;
 
   @media screen and (min-width: 375px) {
     width: 250px;
@@ -41,6 +49,7 @@
 
   @media screen and (min-width: $tablet) {
     width: 264px;
+    padding: 40px 34px;
   }
 
   @media screen and (min-width: 1080px) {
@@ -49,7 +58,6 @@
 
   &.menu--hidden {
     transform: translateX(100%);
-    opacity: 0;
     visibility: hidden;
     overflow: scroll;
     pointer-events: none;
@@ -58,7 +66,7 @@
 
 .mobile-menu__list {
   list-style: none;
-  z-index: 12;
+  z-index: 14;
 }
 .mobile-menu__list-item {
   border-top: 1pt solid $background-modal-line;
@@ -74,9 +82,12 @@
 
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.3;
   font-family: $main-font;
 
   color: $main-white-color;
+
+  transition: $transition-hover-focus;
 
   &:hover,
   &:focus {
@@ -119,47 +130,45 @@
   left: 10%;
   top: 10%;
   width: 24px;
-  height: 32px;
-  background-image: linear-gradient(-1deg, rgba(240, 150, 168, 0.8), rgba(225, 121, 146, 0.1));
+  height: 36px;
+  background-image: linear-gradient(30deg, rgba(238, 153, 172, 0.7), rgba(207, 93, 127, 0.2));
   border-radius: 90%;
-  transform: rotate(-10deg);
+  transform: rotate(-12deg);
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-name: drop;
 }
 
 .drop--1 {
-  animation-duration: 16s;
+  background-color: $background-modal;
+  transform: rotate(8deg);
+
+  animation-duration: 15s;
   animation-delay: 0ms;
-  left: -2%;
-  top: 6%;
+  left: -1%;
+  top: 1%;
 }
 
 .drop--2 {
   opacity: 1;
-  animation-duration: 26s;
+  animation-duration: 22s;
   animation-delay: 0ms;
   left: 92%;
   top: 10%;
 }
 
 .drop--3 {
+  transform: rotate(-2deg);
+
   animation-duration: 12s;
   animation-delay: 0ms;
-  left: 8%;
-  top: 50%;
+  left: 9%;
+  top: 46%;
 }
 
 .drop--4 {
-  animation-duration: 8s;
-  animation-delay: 10ms;
-  left: 80%;
-  top: 58%;
-}
-
-.drop--5 {
-  animation-duration: 20s;
-  animation-delay: 0ms;
-  left: 58%;
-  top: 54%;
+  animation-duration: 24s;
+  animation-delay: 2ms;
+  left: 76%;
+  top: 38%;
 }
