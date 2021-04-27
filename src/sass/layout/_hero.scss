@@ -11,6 +11,7 @@
   @media screen and (min-width: 1024px) {
     width: 88%;
   }
+  
   @media screen and (min-width: $desktop) {
     width: 1080px;
   }
@@ -28,7 +29,8 @@
 
 .hero {
   margin: 0 auto;
-  height: 502px;
+  // height: 502px;
+  height: 100vh;
   min-width: 320px;
   // max-width: 1280px;
   background-color: $background-accent;
@@ -366,7 +368,7 @@
     width: 188px;
     height: 191px;
     left: -28px;
-    bottom: 45px;
+    // bottom: 45px;
   }
 }
 
