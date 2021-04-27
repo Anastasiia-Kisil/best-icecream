@@ -1,98 +1,4 @@
-.grid {
-  margin: 0 auto;
-  transition: all 0.5s ease 0s;
-
-  &._active .grid-item {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.1s;
-  }
-  &._active .grid-item:nth-child(2) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.2s;
-  }
-  &._active .grid-item:nth-child(3) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.3s;
-  }
-  &._active .grid-item:nth-child(4) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.4s;
-  }
-  &._active .grid-item:nth-child(5) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.5s;
-  }
-  &._active .grid-item:nth-child(6) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.6s;
-  }
-  &._active .grid-item:nth-child(7) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.7s;
-  }
-  &._active .grid-item:nth-child(8) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.8s;
-  }
-  &._active .grid-item:nth-child(9) {
-    // transform: scale(1);
-    animation: crescendo 1s alternate ease 0.9s;
-  }
-}
-
-@keyframes crescendo {
-  0% {
-    transform: scale(0.9);
-  }
-
-  60% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.grid-item {
-  z-index: 1;
-  margin-bottom: 10px;
-  width: 200px;
-
-  transition: all 150ms linear;
-
-  @include breakpoint(mobile-only) {
-    width: 40px;
-    margin-bottom: 5px;
-  }
-
-  @include breakpoint(mobile-to-tablet) {
-    width: 85px;
-    margin-bottom: 5px;
-  }
-
-  @include breakpoint(tablet-to-desktop) {
-    width: 150px;
-  }
-
-  &:hover {
-    z-index: 2;
-    transform: scale(1.3);
-  }
-}
-
-.grid-item img {
-  width: 100%;
-  border-radius: 20px;
-  transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @include breakpoint(mobile-only) {
-    border-radius: 5px;
-  }
-}
-
-// КОНЕЦ ГАЛЕРЕИ MASONRY
-
-// ГАЛЕРЕЯ ОКСАНА + МАКС!!
+// ГАЛЕРЕЯ
 
 .gallery {
   position: relative;
@@ -315,17 +221,8 @@
   }
 }
 
-// КОНЕЦ ГАЛЕРЕИ ОКСАНЫ + МАКС
+// КОНЕЦ ГАЛЕРЕИ
 
-// ПЕРЕКЛЮЧАТЕЛЬ ГАЛЕРЕЙ!!!
-
-.switch__box {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin-left: 1%;
-}
 /* Hide default HTML checkbox */
 .switch__box input {
   opacity: 0;
@@ -333,110 +230,36 @@
   height: 0;
 }
 /* The slider */
-.switch__slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: $main-white-color;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+// .switch__slider {
+//   position: absolute;
+//   cursor: pointer;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: $main-white-color;
+//   -webkit-transition: 0.4s;
+//   transition: 0.4s;
 
-  opacity: 0.1;
+//   opacity: 0.1;
 
-  &:hover,
-  &:focus {
-    opacity: 1;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     opacity: 1;
+//   }
+// }
 
-.switch__info {
-  position: absolute;
-  left: 68px;
-  top: 7px;
+// .switch__info {
+//   position: absolute;
+//   left: 68px;
+//   top: 7px;
 
-  pointer-events: none;
-  transition: 0.4s;
-  opacity: 1;
+//   pointer-events: none;
+//   transition: 0.4s;
+//   opacity: 1;
 
-  color: $background-accent-light;
-}
-
-.switch__info {
-  &-masonry {
-    display: block;
-    color: $background-beige;
-    animation: crescendo 1s alternate ease 0.1s;
-  }
-
-  .switch__info-flex {
-    display: none;
-  }
-}
-
-.switch__info.toggled {
-  .switch__info-masonry {
-    display: none;
-  }
-
-  .switch__info-flex {
-    display: block;
-    animation: crescendo 1s alternate ease 0.1s;
-  }
-}
-.switch__info-masonry {
-  opacity: 0;
-  transition: 0.4s 0s;
-
-  .switch__box:hover &,
-  .switch__box:focus & {
-    opacity: 1;
-    transition: 0.4s 0.3s;
-  }
-}
-
-.switch__info-flex {
-  opacity: 0;
-  transition: 0.4s 0s;
-
-  .switch__box:hover &,
-  .switch__box:focus & {
-    opacity: 1;
-    transition: 0.4s 0.3s;
-  }
-}
-
-.switch__slider:before {
-  position: absolute;
-  content: '';
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-input:checked + .switch__slider {
-  background-color: $background-beige;
-}
-input:focus + .switch__slider {
-  box-shadow: 0 0 1px $background-beige;
-}
-input:checked + .switch__slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.switch__slider.round {
-  border-radius: 34px;
-}
-.switch__slider.round:before {
-  border-radius: 50%;
-}
+//   color: $background-accent-light;
+// }
 
 // КОНЕЦ ПЕРЕКЛЮЧАТЕЛЯ ГАЛЕРЕЙ!!
 
@@ -476,21 +299,21 @@ input:checked + .switch__slider:before {
   }
 }
 
-@keyframes crescendo {
-  0% {
-    transform: scale(0);
-  }
-  40% {
-    transform: scale(1.3);
-  }
+// @keyframes crescendo {
+//   0% {
+//     transform: scale(0);
+//   }
+//   40% {
+//     transform: scale(1.3);
+//   }
 
-  60% {
-    transform: scale(0.8);
-  }
-  80% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
+//   60% {
+//     transform: scale(0.8);
+//   }
+//   80% {
+//     transform: scale(1.1);
+//   }
+//   100% {
+//     transform: scale(1);
+//   }
+// }
