@@ -83,6 +83,12 @@
     padding-bottom: 16px;
     cursor: pointer;
     transition: color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $text-color-title;
+    }
+    
     @media screen and (min-width: 1280px) {
       padding-top: 30px;
       padding-bottom: 30px;
