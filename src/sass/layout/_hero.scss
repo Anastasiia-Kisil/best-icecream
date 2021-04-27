@@ -11,6 +11,9 @@
   @media screen and (min-width: 1024px) {
     width: 88%;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1080px;
+  }
 }
 
 .hero .wrapper {
@@ -27,10 +30,40 @@
   margin: 0 auto;
   height: 502px;
   min-width: 320px;
-  max-width: 1280px;
+  // max-width: 1280px;
   background-color: $background-accent;
-  transition: all 0.3s ease 0s;
   overflow: hidden;
+  transition: all 0.3s ease 0s;
+
+  .bg-effect {
+    position: absolute;
+    height: 100%;
+    left: 0px;
+    right: 0px;
+    // top: 0px;
+    // bottom: 0px;
+    // padding: 0px !important;
+    // margin: 0px !important;
+    background-image: url('../images/hero/snow1.png'), url('../images/hero/snow2.png');
+
+    animation-name: cangebgimage;
+    animation-duration: 3s;
+    transition-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    // animation: changebgimage 3s linear 0s infinite normal none running snow;
+
+    @keyframes cangebgimage{
+      0%{
+        opacity:0;transform:translate(30px, 30px);;
+      }
+      to{opacity:1;transform:translate(0, 0px);
+      }
+    }
+  }
 
   @media screen and (max-width: $max-mobile) {
     padding-top: 137px;
@@ -247,6 +280,7 @@
   }
 }
 
+
 .hero__bg-16 {
   position: absolute;
   top: 0;
@@ -267,6 +301,71 @@
     height: 77px;
     right: 0;
   }
+}
+
+.bg-group-2 {
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    transition: all 0.2s ease 0s;
+    right: 34px;
+    top: 0;
+
+    &__item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__quantity {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      font-family: $secondary-font;
+      font-size: 28px;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color:$text-color-title;
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        right: -15%;
+        content: "";
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: $main-white-color;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+      }
+
+      @media screen and (min-width: $desktop) {
+        font-size: 46px;
+        line-height: 53px;
+        &::after {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    &__weight {
+      font-family: $main-font;
+      font-size: 8px;
+      line-height: 10px;
+      text-align: right;
+      color: $main-white-color;
+  
+      @media screen and (min-width:$desktop) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }  
 }
 
 .hero__bg-23 {

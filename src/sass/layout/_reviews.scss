@@ -44,9 +44,9 @@
   // width: 280px;
   // padding-left: 56px;
   // padding-right: 56px;
-  padding-top: 44px;
-  padding-bottom: 26px;
-
+  // padding-top: 44px;
+  // padding-bottom: 26px;
+  padding: 43px 66px 26px 57px;
   background-color: $background-reviews-light;
 
   @media screen and (min-width: $tablet) {
@@ -69,7 +69,7 @@
   }
 }
 .reviews__text {
-  width: 158px;
+  // width: 158px;
   font-family: $main-font;
   font-style: normal;
   font-weight: 500;
