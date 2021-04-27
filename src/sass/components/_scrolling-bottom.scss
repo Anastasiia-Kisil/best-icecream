@@ -1,37 +1,32 @@
-#back-top {
+.back_to_top {
   position: fixed;
-  bottom: 0px;
-  padding: 0px;
   right: -15px;
   bottom: 5%;
-  z-index: 99991;
-  &:hover {
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  display: none;
+  background-image: url(../images/moo-mobile.png);
+  width: 58px;
+  height: 80px;
+  background-repeat: no-repeat;
+  
+
+    &:hover {
     right: 0px;
   }
 }
 
-#back-top a {
-  width: 58px;
-  height: 80px;
-  background-repeat: no-repeat;
-  color: #000;
-  background-image: url(../images/moo-mobile.png);
+.back_to_top-show {
   display: block;
-  text-decoration: none;
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-  transition: all linear 0.2s;
-  justify-content: center;
-  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  #back-top {
+  .back_to_top {
     right: -25px;
-  }
-  #back-top a {
     width: 95px;
     height: 130px;
     background-image: url(../images/moo-table.png);
@@ -39,20 +34,16 @@
 }
 
 @media screen and (min-width: 1080px) {
-  #back-top {
+  .back_to_top {
     right: -44px;
-  }
-  #back-top a {
     width: 160px;
     height: 200px;
     background-image: url(../images/moo-desktop.png);
   }
 }
 @media screen and (min-width: 1280px) {
-  #back-top {
+  .back_to_top {
     right: -44px;
-  }
-  #back-top a {
     width: 160px;
     height: 200px;
     background-image: url(../images/moo-desktop.png);
