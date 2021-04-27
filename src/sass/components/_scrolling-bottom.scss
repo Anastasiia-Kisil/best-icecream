@@ -2,14 +2,17 @@
   position: fixed;
   bottom: 0px;
   padding: 0px;
-  right: 0px;
-  bottom: 0%;
+  right: -15px;
+  bottom: 5%;
   z-index: 99991;
+  &:hover {
+    right: 0px;
+  }
 }
 
 #back-top a {
-  width: 90px;
-  height: 120px;
+  width: 58px;
+  height: 80px;
   background-repeat: no-repeat;
   color: #000;
   background-image: url(../images/moo-mobile.png);
@@ -22,4 +25,36 @@
   transition: all linear 0.2s;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #back-top {
+    right: -25px;
+  }
+  #back-top a {
+    width: 95px;
+    height: 130px;
+    background-image: url(../images/moo-table.png);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  #back-top {
+    right: -44px;
+  }
+  #back-top a {
+    width: 160px;
+    height: 200px;
+    background-image: url(../images/moo-desktop.png);
+  }
+}
+@media screen and (min-width: 1280px) {
+  #back-top {
+    right: -44px;
+  }
+  #back-top a {
+    width: 160px;
+    height: 200px;
+    background-image: url(../images/moo-desktop.png);
+  }
 }
