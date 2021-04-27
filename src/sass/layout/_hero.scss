@@ -37,10 +37,7 @@
     height: 100%;
     left: 0px;
     right: 0px;
-    // top: 0px;
-    // bottom: 0px;
-    // padding: 0px !important;
-    // margin: 0px !important;
+    
     background-image: url('../images/hero/snow1.png'), url('../images/hero/snow2.png');
 
     animation-name: cangebgimage;
@@ -59,18 +56,8 @@
       }
       to{opacity:1;transform:translate(0, 0px);
       }
-      25%{
-        opacity:1;transform:translate(20px, 20px);;
-      }
-      to{opacity:0;transform:translate(0px, 0px);
-      }
       50%{
         opacity:1;transform:translate(10px, 10px);;
-      }
-      to{opacity:0;transform:translate(0px, 0px);
-      }
-      75%{
-        opacity:1;transform:translate(0px, 0px);;
       }
       to{opacity:0;transform:translate(0px, 0px);
       }
@@ -292,29 +279,6 @@
   }
 }
 
-
-.hero__bg-16 {
-  position: absolute;
-  top: 0;
-  right: 34px;
-  transition: all 0.2s ease 0s;
-
-  @media screen and (max-width: $max-mobile) {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 43px;
-    height: 44px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 72px;
-    height: 77px;
-    right: 0;
-  }
-}
-
 .bg-group-2 {
   @media screen and (max-width: $max-mobile) {
     display: none;
@@ -378,29 +342,6 @@
       }
     }
   }  
-}
-
-.hero__bg-23 {
-  position: absolute;
-  transition: all 0.2s ease 0s;
-
-  @media screen and (max-width: $max-mobile) {
-    display: none;
-  }
-
-  @media screen and (min-width: $tablet) {
-    width: 51px;
-    height: 43px;
-    top: 56px;
-    right: 34px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    width: 92px;
-    height: 76px;
-    top: 87px;
-    right: 0;
-  }
 }
 
 .hero__bg-milk {
