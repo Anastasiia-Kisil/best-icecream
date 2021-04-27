@@ -1,14 +1,11 @@
-.menu-btn {
-  position: absolute;
-  top: 23px;
-  right: 34px;
+.close-menu-btn {
   border-style: none;
   cursor: pointer;
 
   color: $main-white-color;
   background-color: transparent;
 
-  &__icon-close {
+  &__icon {
     width: 14px;
     height: 14px;
     fill: currentColor;
@@ -17,5 +14,27 @@
   &:hover,
   &:focus {
     color: $background-hover;
+  }
+}
+
+.button-container__burger-menu-btn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+  cursor: pointer;
+
+  color: $background-hover;
+  background-color: transparent;
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+    fill: currentColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $main-white-color;
   }
 }
