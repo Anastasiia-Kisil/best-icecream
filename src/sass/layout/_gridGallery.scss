@@ -195,7 +195,7 @@
 
 @include breakpoint(tablet) {
   .gallery {
-    padding: 0 74px;
+    // padding: 0 74px;
   }
 
   .item-box {
@@ -223,7 +223,7 @@
 
 @include breakpoint(desktop) {
   .gallery {
-    padding: 0 133px;
+    // padding: 0 133px;
   }
   .item-box {
     border-radius: 20px;
