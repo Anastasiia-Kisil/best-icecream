@@ -8,21 +8,19 @@
   text-align: center;
   line-height: 30px;
   cursor: pointer;
-  display: none;
   background-image: url(../images/moo-mobile.png);
   width: 58px;
   height: 80px;
   background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 250ms linear;
   
-
     &:hover {
     right: 0px;
   }
 }
 
-.back_to_top-show {
-  display: block;
-}
+
 
 @media screen and (min-width: 768px) {
   .back_to_top {

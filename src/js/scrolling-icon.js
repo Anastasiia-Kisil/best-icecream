@@ -1,27 +1,19 @@
-(function() {
-    'use strict';
-  
-    function trackScroll() {
-      var scrolled = window.pageYOffset;
-      var coords = document.documentElement.clientHeight;
-  
-      if (scrolled > coords) {
-        goTopBtn.classList.add('back_to_top-show');
+
+
+function backToTOP() {
+  let button = $('.back_to_top');
+
+  $(window).on('scroll', () => {
+      if ($(this).scrollTop() >= 50) {
+          button.css('opacity', '1');
+      } else {
+          button.css('opacity', '0');
       }
-      if (scrolled < coords) {
-        goTopBtn.classList.remove('back_to_top-show');
-      }
-    }
-  
-    function backToTop() {
-      if (window.pageYOffset > 0) {
-        window.scrollBy(0, -30);
-        setTimeout(backToTop, 0);
-      }
-    }
-  
-    var goTopBtn = document.querySelector('.back_to_top');
-  
-    window.addEventListener('scroll', trackScroll);
-    goTopBtn.addEventListener('click', backToTop);
-  })();
+  });
+
+  button.on('click', (e) => {
+      e.preventDefault();
+      $('html').animate({scrollTop: 0}, 1000);
+  })
+}
+backToTOP();
