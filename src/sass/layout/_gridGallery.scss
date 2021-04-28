@@ -206,6 +206,13 @@
 
 .promo {
   background-color: $background-accent-light;
+  padding-top: 27px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 70px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 70px;
+  }
 }
 
 .gallery-box.type-one {
